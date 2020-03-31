@@ -1,0 +1,167 @@
+html {
+    background: #CCCCCC;
+}
+body {
+    font-family: sans-serif;
+    font: medium;
+    margin-left: 5%;
+}
+input {
+    display: none;
+}
+section {
+    margin-left: 400px;
+    padding: 15px 0 15px 0;
+    height: 100%;
+    width: 450px;
+}
+section > div {
+    display: none;
+}
+#radio-section-0:checked ~ #section-0 > div {
+    display: block;
+}
+#radio-section-1:checked ~ #section-1 > div {
+    display: block;
+}
+#radio-section-2:checked ~ #section-2 > div {
+    display: block;
+}
+#radio-section-3:checked ~ #section-3 > div {
+    display: block;
+}
+#radio-section-4:checked ~ #section-4 > div {
+    display: block;
+}
+#radio-section-5:checked ~ #section-5 > div {
+    display: block;
+}
+#radio-section-6:checked ~ #section-6 > div {
+    display: block;
+}
+
+@media print {
+    @page {
+        size: A4;
+    }
+}
+#header-name, .details-container {
+    font-size: 22.4px;
+    color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header-name {
+    color: #eeeeee;
+}
+
+.details-container {
+    font-size: 14px;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    text-align: center;
+}
+h1, h3 {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;   
+}
+#header-projects {
+    color: #444444;
+}
+.projects-container {
+    color: #444444;
+    padding-left:  8%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+#header-tech-skills {
+    color: #DDEEFF;
+}
+.tech-skills-container {
+    color: #DDEEFF;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+#header-summary {
+    color: #444444; 
+}
+.summary-container {
+    color: #444444;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+#header-tech-studies {
+    color: #1B3D15;
+}
+.tech-studies-container {
+    color: #1B3D15;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+#header-career {
+    color: #410F28;
+}
+.career-container {
+    color: #410F28;
+    padding-left: 3%;
+text-align: center;
+padding-right: 3%;
+}
+#header-achievements {
+    color: #99BBDD;
+}
+.achievements-container {
+    color: #99BBDD;
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+#header-education {
+    color: rgb(243, 231, 250);
+}
+.education-container {
+    color: rgb(243, 231, 250);
+    padding-left: 8%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+.education-type {
+    font-weight: bold;
+    font-size: 17px;
+    list-style-type: none;
+}
+.education-type:nth-child(1) {
+    text-decoration: underline;
+}
+#section-0 {
+    background-color: #000000;
+}
+#section-1 {
+    background-color: #D8B453;
+}
+#section-2 {
+    background-color: #336699;
+}
+#section-3 {
+    background-color: #3CAEA3;
+}
+#section-4 {
+    background-color: #ED553B;
+}
+#section-5 {
+    background-color: #173F5F;
+}
+#section-6 {
+    background-color: rgb(51, 31, 63);
+}
+.contact-details {
+    text-align: center;
+    text-decoration: underline;
+    list-style-type: none;
+}
+a {
+color: white;
+}
