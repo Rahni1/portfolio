@@ -1,0 +1,95 @@
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+}
+
+.wrapper-form {
+  width: 100%;
+  top: -50px;
+  padding: 50px;
+  left: 5%;
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+.wrapper-form {
+  left: 25%;
+  width: 60%;
+}
+} 
+
+input,
+textarea {
+  top: 20px;
+  width: 80%;
+  height: 38px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-header {
+  margin-top: 10%;
+  text-align: center;
+  color: $blue;
+  font-family: $ff-s;
+  font-size: 24px;
+  text-decoration: underline;
+}
+input {
+  margin: 15px;
+  height: 45px;
+}
+
+textarea {
+  margin: 20px 20px 0px 17px;
+  height: 140px;
+}
+
+.form-area {
+  height: 390px;
+  width: 80%;
+}
+
+@mixin textBox {
+    padding: 10px;
+    border: 3px solid $blue;
+    width: 100%;
+}
+
+.form-area input {
+@include textBox();
+  margin-bottom: 20px;
+}
+
+.form-area textarea {
+@include textBox();
+}
+
+.wrap {
+  height: 60px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box {
+  padding: 1em;
+  height: 60px;
+  text-align: center;
+}
+
+.form-btn {
+  border: 2px solid $blue;
+  background: none;
+  color: $blue;
+  font-weight: $fw-b;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 18px;
+  font-size: 14px;
+&:hover {
+  background: $blue;
+  border: none;
+  padding: 8px;
+  border: 2px solid $blue;
+  color: $white;
+}
+}

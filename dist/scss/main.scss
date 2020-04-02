@@ -1,0 +1,74 @@
+@import 'modules/typography';
+@import 'modules/colors';
+
+@import 'partials/socialmedia';
+@import 'partials/portfolio';
+@import 'partials/contactform';
+@import 'partials/navbar';
+@import 'partials/about';
+@import 'partials/footer';
+
+* {
+  box-sizing: border-box;
+}
+
+.light-bg {
+  background-color: $white;
+  padding: 5% 0;
+  height: 350px;
+  color: $blue;
+}
+@media screen and (max-width: 600px) {
+  .light-bg {
+    height: 550px;
+  }
+}
+.hero-image {
+  background: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -38px;
+  margin-left: -8px;
+}
+
+
+h1 {
+  color: $white;
+  font-family: $ff-s;
+  text-align: right;
+  font-size: min(max(35px, 3vw), 38px);
+  font-weight: 200;
+  margin-right: 12%;
+  padding-top: 220px;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+span {
+  line-height: 3;
+  display: block;
+}
+
+.dark-bg {
+  background-color: $blue;
+  padding: 2%;
+  margin-left: -8px;
+  width: 100vw;
+  color: $white;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5em;
+}

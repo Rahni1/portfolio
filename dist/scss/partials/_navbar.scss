@@ -1,0 +1,32 @@
+nav {
+    background-color: $blue;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: -8px;
+    ul {
+      list-style: none;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    li {
+      @media (max-width: 700px) {
+        width: 50%;
+        text-align: center;
+      }
+      padding: 13px 20px;
+    }
+    a {
+      font-weight: 700;
+      font-size: .9em;
+      font-family: $ff-ss;
+      text-transform: uppercase;
+      color: $white;
+      text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+  }
+}

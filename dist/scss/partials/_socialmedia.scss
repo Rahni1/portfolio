@@ -1,0 +1,25 @@
+.social-media {
+    list-style-type: none;
+    float: right;
+    margin-right: 4%;
+   }
+   
+   .social-media li a {
+   color: $white;
+  &:hover {
+    color: $grey;
+  }
+  }
+   .social-media li {
+     display: inline;
+     padding: 8px;
+     font-size: 22px;
+   }
+  
+   .hero-image .social-media li {
+    font-size: 26px;
+  }
+  .hero-image .social-media {
+    margin-top: 30px;
+  }
+  

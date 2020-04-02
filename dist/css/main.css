@@ -1,56 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans:wght@400&display=swap");
-* {
-  box-sizing: border-box;
-}
-
-.light-bg {
-  background-color: white;
-  padding: 5% 0;
-  color: #12212f;
-}
-
-.about-me p {
-  font-family: "Noto Sans", sans-serif;
-  width: 50%;
+.social-media {
+  list-style-type: none;
   float: right;
-  text-align: justify;
-  margin-right: 20%;
+  margin-right: 4%;
 }
 
-.about-me h2 {
-  text-decoration: underline;
-  font-size: 24px;
-  font-family: "Merriweather", serif;
-  text-align: center;
-}
-
-.hero-image {
-  background: url(../../src/images/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  margin-top: -30px;
-  margin-left: -8px;
-}
-
-.img-me {
-  border-radius: 50%;
-  width: 10%;
-  height: 12%;
-  margin-left: 17%;
-  margin-top: 20px;
-}
-
-h1 {
+.social-media li a {
   color: white;
-  font-family: "Merriweather", serif;
-  text-align: center;
-  font-size: 2.4em;
-  padding-top: 15%;
-  padding-bottom: 15%;
+}
+.social-media li a:hover {
+  color: #aeaeb1;
+}
+
+.social-media li {
+  display: inline;
+  padding: 8px;
+  font-size: 22px;
+}
+
+.hero-image .social-media li {
+  font-size: 26px;
+}
+
+.hero-image .social-media {
+  margin-top: 30px;
 }
 
 .portfolio-header {
@@ -61,53 +34,18 @@ h1 {
   text-decoration: underline;
 }
 
-span {
-  line-height: 4;
-  display: block;
+main {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 40px;
+  padding: 60px 0;
 }
 
-.dark-bg {
-  background-color: #12212f;
-  padding: 2%;
-  padding-bottom: 6%;
-  margin-left: -8px;
-  width: 100vw;
-  color: white;
-}
-
-nav {
-  background-color: #12212f;
-  overflow: hidden;
-  width: 100vw;
-  margin-left: -10px;
-}
-nav ul {
-  list-style: none;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-nav li {
-  padding: 13px 20px;
-}
-@media (max-width: 700px) {
-  nav li {
-    width: 50%;
-    text-align: center;
-  }
-}
-nav a {
-  font-weight: 700;
-  font-size: 0.9em;
-  font-family: "Noto Sans", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-}
-nav a:hover {
-  text-decoration: underline;
+.cards {
+  grid-column: 2/span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: 40px;
 }
 
 .card {
@@ -118,23 +56,42 @@ nav a:hover {
   font-size: 14px;
   padding: 1%;
   text-align: center;
-  width: 24%;
-  height: 220px;
+  grid-column-end: span 6;
+  display: flex;
+  flex-direction: column;
   box-shadow: #5c6874 5px 5px 15px;
 }
 
-.card1 {
-  margin-left: 4%;
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-column: 2/span 7;
+    grid-template-columns: repeat(8, minmax(auto, 60px));
+  }
+
+  .card {
+    grid-column-end: span 7;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.link-btn {
+  text-decoration: none;
+  color: #12212f;
+  font-weight: 700;
+  border: 2px #12212f solid;
+  border-radius: 20%;
+  padding: 4px;
+  width: 40%;
 }
 
-.card2 {
-  margin-top: -18%;
-  margin-left: 38%;
+.code-btn {
+  float: right;
+  margin-left: 50%;
+  margin-top: -30px;
 }
 
-.card3 {
-  margin-left: 73%;
-  margin-top: -18%;
+.card4 .link-btn {
+  margin-left: 30%;
 }
 
 input::placeholder,
@@ -143,13 +100,19 @@ textarea::placeholder {
 }
 
 .wrapper-form {
-  width: 60%;
+  width: 100%;
   top: -50px;
   padding: 50px;
-  left: 25%;
+  left: 5%;
   position: relative;
 }
 
+@media only screen and (min-width: 992px) {
+  .wrapper-form {
+    left: 25%;
+    width: 60%;
+  }
+}
 input,
 textarea {
   top: 20px;
@@ -183,16 +146,16 @@ textarea {
 }
 
 .form-area input {
-  width: 100%;
-  margin-bottom: 20px;
   padding: 10px;
   border: 3px solid #12212f;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-area textarea {
-  width: 100%;
   padding: 10px;
   border: 3px solid #12212f;
+  width: 100%;
 }
 
 .wrap {
@@ -218,7 +181,6 @@ textarea {
   margin-left: 18px;
   font-size: 14px;
 }
-
 .form-btn:hover {
   background: #12212f;
   border: none;
@@ -227,9 +189,144 @@ textarea {
   color: white;
 }
 
-.copyright {
+nav {
+  background-color: #12212f;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: -8px;
+}
+nav ul {
+  list-style: none;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav ul li {
+  padding: 13px 20px;
+}
+@media (max-width: 700px) {
+  nav ul li {
+    width: 50%;
+    text-align: center;
+  }
+}
+nav ul a {
+  font-weight: 700;
+  font-size: 0.9em;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+.about-me p {
+  font-family: "Noto Sans", sans-serif;
+  width: 50%;
+  float: right;
+  text-align: justify;
+  margin-right: 20%;
+}
+
+.about-me h2 {
+  text-decoration: underline;
+  font-size: 24px;
+  font-family: "Merriweather", serif;
   text-align: center;
-  margin: 3.5% 0 0 18%;
+}
+
+.img-me {
+  border-radius: 50%;
+  width: 9%;
+  height: 14%;
+  margin-left: 17%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me p {
+    margin-right: 14%;
+  }
+
+  .img-me {
+    width: 21%;
+    height: 35%;
+    margin-left: 8%;
+  }
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  margin-bottom: -8px;
+  margin-left: -8px;
+}
+
+@media screen and (max-width: 600px) {
+  .copyright {
+    text-align: center;
+    margin-top: 4%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.light-bg {
+  background-color: white;
+  padding: 5% 0;
+  height: 350px;
+  color: #12212f;
+}
+
+@media screen and (max-width: 600px) {
+  .light-bg {
+    height: 550px;
+  }
+}
+.hero-image {
+  background: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -38px;
+  margin-left: -8px;
+}
+
+h1 {
+  color: white;
+  font-family: "Merriweather", serif;
+  text-align: right;
+  font-size: min(max(35px, 3vw), 38px);
+  font-weight: 200;
+  margin-right: 12%;
+  padding-top: 220px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+span {
+  line-height: 3;
+  display: block;
+}
+
+.dark-bg {
+  background-color: #12212f;
+  padding: 2%;
+  margin-left: -8px;
+  width: 100vw;
+  color: white;
 }
 
 #page-container {
@@ -238,53 +335,7 @@ textarea {
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  margin-bottom: -8px;
-  margin-left: -8px;
-  height: 5rem;
-}
-
-.link-btn {
-  text-decoration: none;
-  color: #12212f;
-  font-weight: 700;
-  border: 2px #12212f solid;
-  border-radius: 20%;
-  padding: 4px;
-}
-
-.card4 {
-  margin-left: 38%;
-}
-
-.social-media {
-  list-style-type: none;
-  float: right;
-  margin-right: 4%;
-}
-
-.social-media li a {
-  color: white;
-}
-
-.social-media li {
-  display: inline;
-  padding: 8px;
-  font-size: 22px;
-}
-
-.social-media li a:hover {
-  color: #aeaeb1;
-}
-
-.hero-image .social-media li {
-  font-size: 26px;
+  padding-bottom: 2.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
