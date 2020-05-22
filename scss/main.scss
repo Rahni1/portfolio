@@ -11,6 +11,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 
 .light-bg {
   background-color: $white;

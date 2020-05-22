@@ -278,6 +278,10 @@ nav ul a:hover {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .light-bg {
   background-color: white;
   padding: 5% 0;
