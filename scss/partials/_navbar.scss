@@ -1,34 +1,28 @@
-nav {
-    background-color: $blue;
-    overflow: hidden;
-    width: 100vw;
-    margin-left: -8px;
-    top: 0;
-    position: sticky;
-    ul {
-      list-style: none;
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    li {
-      @media (max-width: 700px) {
-        width: 50%;
-        text-align: center;
-      }
-      padding: 13px 20px;
-    }
-    a {
-      font-weight: 700;
-      font-size: .9em;
-      font-family: $ff-ss;
-      text-transform: uppercase;
-      color: $white;
-      text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-  }
-  }
+.header .main-menu .navbar .navbar-brand{
+  padding: 0 2rem 0 5rem;
+}
+
+.header .main-menu .navbar{
+  padding: 1rem 20rem;
+}
+
+.header .main-menu .nav-item .nav-link{
+  font: normal 500 15px/2px $f-n;
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: $title-color;
+}
+
+.header .main-menu .navbar-nav .active a{
+  background: $orange;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header .main-menu .navbar-nav a:hover{
+  background: $orange;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
