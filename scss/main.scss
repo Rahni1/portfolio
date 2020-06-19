@@ -1,7 +1,7 @@
 @import 'modules/typography';
 @import 'modules/colors';
 
-@import 'partials/socialmedia';
+@import 'partials/skills';
 @import 'partials/portfolio';
 @import 'partials/contactform';
 @import 'partials/navbar';
@@ -104,42 +104,4 @@ button:hover
   color: $text-color;
 }
 
-// brand area
 
-.site-main .skills {
-  padding: 1rem 1rem;
-  margin-bottom: 4rem;
-}
-
-.site-main .skills .first-row .col-lg-4 {
-  display: flex;
-  justify-content: center;
-}
-
-.site-main .skills .first-row .col-lg-4 > .single-skill {
- border: 1px solid $border-color;
- text-align: center;
- padding: 1rem;
- margin: 1rem 0rem;
- width: 180px;
- height: 100px;
- cursor: pointer;
- transition: transform .4s ease;
-}
-
-.site-main .skills .first-row .col-lg-4 > img {
-  width: 50%;
-}
-
-.site-main .skills .first-row .col-lg-4 > .single-skill:hover {
-  box-shadow: $box-shadow;
-  transform: scale(1.1);
-}
-
-.site-main .skills .experience {
-  padding-left: 1rem;
-}
-
-.site-main .skills .experience span {
-  display: block;
-}

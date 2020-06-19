@@ -1,72 +1,33 @@
-// .portfolio-header {
-//   color: $white; 
-//   font-size: 24px;
-//   font-family: $ff-s;
-//   text-align: center;
-//   text-decoration: underline;
-// }
-// main {
-//   display: grid;
-//   grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
-//   grid-gap: 40px;
-//   padding: 60px 0;
-// }
+.site-main .projects {
+    padding: 4rem 0;
+}
 
-// .cards {
-//   grid-column: 2 / span 12;
-//   display: grid;
-//   grid-template-columns: repeat(12, minmax(auto, 60px));
-//   grid-gap: 40px;
-// }
+.site-main .projects .button-group button {
+background: transparent;
+border: none;
+font: normal 500 16px/130px $f-n;
+text-transform: uppercase;
+}
 
-// .card {
-//     background: $white;
-//     color: $blue;
-//     margin-top: 5%;
-//     font-family: $ff-ss;
-//     font-size: 14px;
-//    padding: 1%;
-//   text-align: center;
-//    grid-column-end: span 6;
-//    display: flex;
-//    flex-direction: column;
-//     box-shadow: rgb(92, 104, 116) 5px 5px 15px;
-//   }
- 
-// @media screen and (max-width: 600px) {
-//   .cards {
-//     grid-column: 2 / span 7;
-//     grid-template-columns: repeat(8, minmax(auto, 60px));
-//   }
-//   .card {
-//     grid-column-end: span 7;
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
+.site-main .projects .button-group button + button {
+    padding-left: 3rem;
+}
 
-// .dark-bg {
-//   background-color: $blue;
-//   padding: 2%;
-//   margin-left: -8px;
-//   width: 100vw;
-//   color: $white;
-// }
+.site-main .projects .grid .our-project > .title h4 {
+    font: normal 700 25px/12px $f-n;
+}
 
-// .link-btn {
-//   text-decoration: none;
-//   color: $blue;
-//   font-weight: $fw-b;
-//   border: 2px $blue solid;
-//   border-radius: 20%;
-//   padding: 4px;
-//   width: 40%;
-// }
-// .code-btn {
-//   float: right;
-//   margin-left: 50%;
-//   margin-top: -30px;
-// }
-// .card1 .link-btn {
-//   margin-left: 30%;
-// }
+button:focus, button:active, button:hover,
+.btn:active, .btn.active {
+outline: 0px !important;
+box-shadow: none !important;
+}
+
+.site-main > .projects .project {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 1rem;
+    width: 16rem;
+    height: 20rem;
+    margin: 4rem .5rem;
+    transition: box-shadow .7s ease;
+  }

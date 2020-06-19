@@ -1,6 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:800");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.site-main .skills {
+  padding: 1rem 1rem;
+  margin-bottom: 4rem;
+}
+
+.site-main .skills .first-row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.site-main .skills .first-row .col-lg-4 > .single-skill {
+  border: 1px solid #201f1f17;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.site-main .skills .first-row .col-lg-4 > img {
+  width: 50%;
+}
+
+.site-main .skills .first-row .col-lg-4 > .single-skill:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.1);
+}
+
+.site-main .skills .experience {
+  padding-left: 1rem;
+}
+
+.site-main .skills .experience span {
+  display: block;
+}
+
+.site-main .services-area {
+  padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+  padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+  font-size: 35px;
+}
+
+.site-main > .services-area .services {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  height: 20rem;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+
+.site-main > .services-area .services:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.site-main .projects {
+  padding: 4rem 0;
+}
+
+.site-main .projects .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.site-main .projects .button-group button + button {
+  padding-left: 3rem;
+}
+
+.site-main .projects .grid .our-project > .title h4 {
+  font: normal 700 25px/12px "Roboto", sans-serif;
+}
+
+button:focus, button:active, button:hover,
+.btn:active, .btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.site-main > .projects .project {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 1rem;
+  width: 16rem;
+  height: 20rem;
+  margin: 4rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+
 .header .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
@@ -143,44 +240,6 @@ button:active button:hover .btn:active,
 
 .skills-text {
   color: #777777;
-}
-
-.site-main .skills {
-  padding: 1rem 1rem;
-  margin-bottom: 4rem;
-}
-
-.site-main .skills .first-row .col-lg-4 {
-  display: flex;
-  justify-content: center;
-}
-
-.site-main .skills .first-row .col-lg-4 > .single-skill {
-  border: 1px solid #201f1f17;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem 0rem;
-  width: 180px;
-  height: 100px;
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-
-.site-main .skills .first-row .col-lg-4 > img {
-  width: 50%;
-}
-
-.site-main .skills .first-row .col-lg-4 > .single-skill:hover {
-  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-  transform: scale(1.1);
-}
-
-.site-main .skills .experience {
-  padding-left: 1rem;
-}
-
-.site-main .skills .experience span {
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
