@@ -21,8 +21,8 @@
          about · portfolio · contact · cv.
          github · linkedin · stackoverflow · codepen · twitter">
   <meta name="keywords" content="Rahni De-Meis, Web Developer, Frontend, 
-        Fullstack, Coding, London, UK, Europe, Sotware engineer, React, Javascript, HTML,
-        CSS, Sass, Github, Git, SQL, Udemy, tech, code, self-taught, studying, 
+        Fullstack, Montpellier, France, Toulouse, Occitanie, Coding, Sotware engineer, React, Javascript, HTML,
+        CSS, Sass, Github, Git, SQL, Udemy, tech, Europe, code, self-taught, studying, 
         remote, freelance, Linkedin, Jira, Stack Overflow, Responsive Web Design, 
         Intuitive designs, CV, code, looking for a role, opportunity, available immediately, 
         contact details
@@ -35,10 +35,11 @@
     content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Rahni | Web Developer</title>
+  <title>Rahni - Full Stack Developer</title>
 </head>
 <header class="header">
   <div class="main-menu">
+    </select>
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><img src="./images/logo.png" width="65px" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -79,7 +80,8 @@
           </h4>
           <div class="site-buttons">
             <div class="d-flex flex-row flex-wrap"></div>
-            <button type="button" class="btn button primary-button mr-4 text-uppercase">Hire Me</button>
+            <button type="button" class="btn button primary-button text-uppercase">Contact
+              Me</button>
             <button type="button" class="btn button secondary-button mr-4 text-uppercase">Get CV</button>
           </div>
         </div>
@@ -116,13 +118,13 @@
       </div>
     </div>
   </section>
-  <!-- brand -->
+  <!-- skills -->
   <section class="skills">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xl-6 col-lg-12 col-md-12">
           <div class="first-row row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-12 col-sm-6">
               <div class="single-skill">
                 <img src="./images/mongodb.png" width="170px" alt="">
               </div>
@@ -169,203 +171,151 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-12 col-md-12">
-          <div class="experience">
-            <div class="d-flex flex-row years-area">
+        <!-- services -->
+        <section class="services-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center services-title">
+                <h1 class="text-uppercase title-text">Services</h1>
+                <p class="para">Why hire me to work on your project?</p>
+              </div>
+            </div>
+            <div class="container services-list">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="./images/services/responsive.png" width="25%" alt="Services-1">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-uppercase font-roboto">Responsive</h5>
+                      <p class="card-text text-secondary">
+                        My web pages render well on every device, mobile to desktop.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="./images/services/dynamic.png" width="25%" alt="Services-1">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-uppercase font-roboto">Dynamic</h5>
+                      <p class="card-text text-secondary">Not just static websites.
+                        I love to breathe life into websites through dynamic server-side code.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="./images/services/clean-code.png" width="25%" alt="Clean Code">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-uppercase font-roboto">Clean Code</h5>
+                      <p class="card-text text-secondary">
+                        I follow good practices to write clean and organised code.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="./images/services/website-design.png" width="25%" alt="Clean Code">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-uppercase font-roboto">UI/UX Design</h5>
+                      <p class="card-text text-secondary">
+                        I have a strong passion for modern, intuitive UI/UX.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- projects -->
+        <section class="projects">
+          <div class="container">
+            <div class="project-title pb-5">
+              <h1 class="text-uppercase title-h1">Projects</h1>
+            </div>
+            <div class="button-group">
+              <button type="button" class="project-category active text-uppercase">All</button>
+              <button type="button" class="project-category text-uppercase" data-filter=".latest">Latest</button>
+              <button type="button" class="project-category text-uppercase" data-filter=".frontend">Front End</button>
+              <button type="button" class="project-category text-uppercase" data-filter=".fullstack">Full Stack</button>
+            </div>
 
-            </div>
-            <div class="d-flex flex-row flex-wrap call-area">
+            <div class="row grid">
+              <a href="#" class="link latest fullstack">
+                <article class="card_wrapper">
+                  <div class="project_summary">
+                    <h2 class="project_title">MERN Stack E-commerce Shop</h2>
+                    <p class="project_desc text-secondary">
+                      I integrated Braintree for Credit Card and Paypal Payment. Admin can
+                      update the status of the orders in the Admin Dashboard.</p>
+                    <button id="ecommerce-code" class="project-btn text-uppercase">View code</button>
+                    <button class="project-btn text-uppercase" id="ecommerce-more">View More</button>
+                  </div>
+                </article>
+              </a>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- services -->
-  <section class="services-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center services-title">
-          <h1 class="text-uppercase title-text">Services</h1>
-          <p class="para">Why hire me to work on your project?
+              <a href="#" class="link frontend">
+                <article class="card_wrapper">
+                  <div class="project_summary">
+                    <h2 class="project_title">App Developer Portfolio</h2>
+                    <p class="project_desc para">I built this responsive portfolio in HTML, CSS and JavaScript.
+                      A key feature of this portfolio is the Interactive CV.</p>
+                    <button class="project-btn text-uppercase" id="portfolio-code">View code</button>
+                    <button class="project-btn text-uppercase" id="portfolio-more">View More</button>
+                  </div>
+                </article>
+              </a>
 
-          </p>
-        </div>
-      </div>
-      <div class="container services-list">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="services">
-              <div class="services-img text-center py-4">
-                <img src="./images/services/responsive.png" width="25%" alt="Services-1">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">Responsive</h5>
-                <p class="card-text text-secondary">My web pages render well on every device, mobile to desktop.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="services">
-              <div class="services-img text-center py-4">
-                <img src="./images/services/dynamic.png" width="25%" alt="Services-1">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">Dynamic</h5>
-                <p class="card-text text-secondary">Not just static websites.
-                  I love to breathe life into websites through dynamic server-side code.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="services">
-              <div class="services-img text-center py-4">
-                <img src="./images/services/clean-code.png" width="25%" alt="Clean Code">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">Clean Code</h5>
-                <p class="card-text text-secondary">I follow good practices to write clean and organised code.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="services">
-              <div class="services-img text-center py-4">
-                <img src="./images/services/website-design.png" width="25%" alt="Clean Code">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">UI/UX Design</h5>
-                <p class="card-text text-secondary">I have a strong passion for modern, intuitive UI/UX.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- projects -->
-  <section class="projects">
-    <div class="container">
-      <div class="project-title pb-5">
-        <h1 class="text-uppercase title-h1">Projects</h1>
-      </div>
-      <div class="button-group">
-        <button type="button" class="active">All</button>
-        <button type="button" data-filter=".latest">Latest</button>
-        <button type="button" data-filter=".frontend">Front End</button>
-        <button type="button" data-filter=".fullstack">Full Stack</button>
-      </div>
-    <!--
-        <div class="project col-lg-3 col-md-6 col-sm-12 element-item latest fullstack">
-          <div class="title py-4">
-            <h4 class="text-uppercase">
-              Ecommerce Shop
-            </h4>
-          </div> -->
-          <!-- <div class="our-project">
-            <div class="img">
-              <p class="text-secondary"> I built this ecommerce website using MERN. I integrated Braintree for Credit
-                Card and
-                Paypal Payment. Admin can create categories and products, view order details and update the status of
-                the orders in the Admin Dashboard.</p>
-              <button class="project-btn">View Code</button>
-              <button class="project-btn">UI Designs</button>
-            </div>
-          </div>
-        </div> -->
 
-        <!-- <div class="project col-lg-3 col-md-6 col-sm-12 element-item frontend">
-          <div class="title py-4">
-            <h4 class="text-uppercase">
-              App Developer Portfolio
-            </h4>
-          </div>
-          <div class="our-project">
-            <div class="img">
-              <p class="text-secondary">
-          </div>
-        </div> -->
- 
-<div class="row grid">
-      <a href="#" class="latest fullstack">
-        <article class="card_wrapper">
-         <!-- <video autoplay muted loop id="myVideo">
-            <source src="./images/ecommerce.mp4" type="video/mp4">
-          </video>  -->
-          <div class="project_summary">
-            <h2 class="project_title">Ecommerce Shop</h2>
-            <p class="project_desc  text-secondary">I built this ecommerce website using MERN. I integrated Braintree for Credit
-              Card and
-              Paypal Payment. Admin can create categories and products, view order details and update the status of
-              the orders in the Admin Dashboard.</p>
-              <button class="project-btn">View code</button>
-              <button class="project-btn">Live Website</button>
-          </div>
-        </article>
-      </a>
-   
-      <a href="#" class="frontend">
-        <article class="card_wrapper">
-          <div class="project_summary">
-            <h2 class="project_title">App Developer Portfolio</h2>
-            <p class="project_desc text-secondary">I built this responsive portfolio in HTML, CSS and JavaScript. 
-              A key feature of this portfolio is the Interactive CV.</p>
-              <button class="project-btn">View code</button>
-              <button class="project-btn">Live Website</button>
-          </div>
-        </article>
-      </a>
-  
- 
-      <a href="#" class="frontend">
-        <article class="card_wrapper">
-          <div class="project_summary">
-            <h2 class="project_title">DevsCreate</h2>
-            <p class="project_desc text-secondary">DevsCreate is a website where software engineers can plan 
-              their next project. I built DevsCreate in
-              React and I used localstorage to save user input.</p>
-              <button class="project-btn">View code</button>
-              <button class="project-btn">Live Website</button>
-          </div>
-        </article>
-      </a>
+              <a href="#" class="link frontend">
+                <article class="card_wrapper">
+                  <div class="project_summary">
+                    <h2 class="project_title">DevsCreate</h2>
+                    <p class="project_desc text-secondary">
+                      DevsCreate is a website where software engineers can
+                      plan their next project. I built DevsCreate in
+                      React and I used localstorage to save user input.</p>
+                    <button class="project-btn text-uppercase" id="devscreate-code">View code</button>
+                    <button class="project-btn text-uppercase" id="devscreate-site">Live Website</button>
+                  </div>
+                </article>
+              </a>
 
-      <a href="#" class="frontend">
-        <article class="card_wrapper">
-          <div class="project_summary">
-            <h2 class="project_title">Boozles</h2>
-            <p class="project_desc text-secondary">Boozles is an entertainment website which I built in HTML, CSS and JavaScript.
-              I retrieved information from two different API's.</p>
-              <button class="project-btn">View code</button>
-              <button class="project-btn">Live Website</button>
+              <a href="#" class="link frontend">
+                <article class="card_wrapper">
+                  <div class="project_summary">
+                    <h2 class="project_title">Boozles</h2>
+                    <p class="project_desc text-secondary">
+                      Boozles is an entertainment website which I built in
+                      HTML, CSS and JavaScript.
+                      I retrieved information from two different API's.</p>
+                    <button class="project-btn text-uppercase" id="boozles-code">View code</button>
+                    <button class="project-btn text-uppercase" id="boozles-site">Live Website</button>
+                  </div>
+                </article>
+              </a>
+            </div>
           </div>
-        </article>
-      </a>  
-    </div>
-  </div>
-  </section>
-  <!-- testimonials -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <div class="testimonials-title">
-            <h1 class="text-uppercase title-h1">What clients say about me</h1>
-            <p class="para text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Vero fugit culpa eveniet iste quam aperiam quidem repudiandae temporibus at doloribus!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 </main>
+<script src="./js/jquery.3.4.1.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="vendor/isotope.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
 
+</html>
 
 
 <!-- 
@@ -381,40 +331,6 @@
             <li class="social-item"><a href="https://twitter.com/RahniDev" class="twitter">
                 <i class="fa fa-twitter"></i></a></li>
   
-              <h2>Ecommerce Shop</h2>
-              <p>I built this ecommerce website using MERN. I integrated Braintree for Credit Card and 
-                Paypal Payment. Admin can create categories and products, view order details and update the status of the orders in the Admin Dashboard.
-              </p>
-              <a class="link-btn" href="https://github.com/Rahni1/ecommerce-website">View Code</a>
-            </div>
-
-            <div class="card card2">
-              <h2>App Developer Portfolio</h2>
-              <p>I built this responsive portfolio in HTML, CSS and JavaScript. 
-                A key feature of this portfolio is the Interactive CV.
-              </p>
-              <a class="link-btn" href="https://sakaridemeis.app">Live Website</a>
-              <a class="link-btn code-btn" href="https://github.com/Rahni1/App-Dev-Portfolio">View Code</a>
-
-            </div>
-          <div class="card card3">
-              <h2>Boozles</h2>
-              <p>Boozles is an entertainment website which I built in HTML, CSS and JavaScript.
-                I retrieved information from two different API's.
-              </p>
-              <a class="link-btn" href="https://rahni1.github.io/Boozles/">Live Website</a>
-              <a class="link-btn code-btn" href="https://github.com/Rahni1/Boozles">View Code</a>
-            </div>
-            <div class="card card4">
-              <h2>DevsCreate</h2>
-              <p>DevsCreate is a website where software engineers can plan their next project. I built DevsCreate in
-                React and I used localstorage to save user input.</p>
-              <a class="link-btn" href="https://rahni1.github.io/devscreate/">Live Website</a>
-              <a class="link-btn code-btn" href="https://github.com/Rahni1/devscreate">View Code</a>
-            </div>
-          </div>
-        </main>
-      </div>
       <div id="contact">
         <h2 class="contact-header">Contact Me</h2>
         <div class="wrapper-form">
@@ -429,29 +345,7 @@
           </div>
         </div>
       </div>
-      <div id="footer" class="footer dark-bg">
-        <ul class="social-media">
-          <li class="social-item"> <a href="https://github.com/Rahni1?tab=repositories" class="github">
-              <i class="fa fa-github"></i></a></li>
-          <li class="social-item"><a href="https://www.linkedin.com/in/rahni-d-252824170/" class="linkedin">
-              <i class="fa fa-linkedin"></i></a></li>
-          <li class="social-item"><a href="https://stackoverflow.com/users/11131552/rahni?tab=profile"
-              class="stackoverflow">
-              <i class="fa fa-stack-overflow"></i></a></li>
-          <li class="social-item"> <a href="https://codepen.io/rahni1" class="codepen">
-              <i class="fa fa-codepen"></i></a></li>
-          <li class="social-item"><a href="https://twitter.com/RahniDev" class="twitter">
-              <i class="fa fa-twitter"></i></a></li>
-        </ul>
         <p class="copyright"> &copy; <script>
             document.write(new Date().getFullYear())
           </script> Rahni De-Meis</p>
       </div> -->
-
-<script src="./js/jquery.3.4.1.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="vendor/isotope.min.js"></script>
-<script src="./js/app.js"></script>
-</body>
-
-</html>

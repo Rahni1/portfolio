@@ -61,3 +61,27 @@ $(document).ready(function () {
     navbarFixed();
 
 });
+// buttons - projects
+document.getElementById("ecommerce-code").onclick = function () {
+    location.href = "https://github.com/Rahni1/ecommerce-website";
+};
+
+document.getElementById("portfolio-code").onclick = function () {
+    location.href = "https://github.com/Rahni1/App-Dev-Portfolio";
+};
+document.getElementById("devscreate-code").onclick = function () {
+    location.href = "https://github.com/Rahni1/devscreate";
+};
+
+document.getElementById("devscreate-site").onclick = function () {
+    location.href = "https://rahni1.github.io/devscreate/";
+};
+
+
+document.getElementById("boozles-code").onclick = function () {
+    location.href = "https://github.com/Rahni1/Boozles";
+};
+
+document.getElementById("boozles-site").onclick = function () {
+    location.href = "https://rahni1.github.io/Boozles/";
+};

@@ -1,23 +1,29 @@
-html {
-    font-family: "Open Sans", sans-serif;
+.projects {
+    font-family: $roboto;
     font-size: 15px;
     letter-spacing: 0.77px;
     font-weight: 400;
     color: $text-color;
 }
-a {
+
+.link {
     text-decoration: none;
     color: inherit !important;
-    // border: 1px solid red
     height: 425px;
     margin-bottom: 50px;
+
+    &:hover {
+        text-decoration: none;
+
+        .project_title {
+            text-decoration: underline;
+        }
+    }
 }
 
-a:hover {
-    text-decoration: none;
-    .project_title {
-        text-decoration: underline;
-    }
+.link:hover .card_wrapper {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
+    transform: scale3d(1.008, 1.008, 1);
 }
 
 .wrapper {
@@ -29,29 +35,31 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .card_wrapper {
     width: 460px;
     transition: transform 0.5s;
     position: relative;
-    height: 460px;
-    margin: 3rem 2rem;
+    // height: 470px;
+    margin: 4rem 3rem;
     border: 1px solid #dedcdc;
-    // border: 1px solid
     border-radius: 6px;
     background: #e4f2f9;
     display: flex;
     flex-direction: column;
     background: url("../../images/projects/ecommerce.png");
-    z-index: 1000;
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 a:nth-of-type(2) .card_wrapper {
     background-image: url("../../images/projects/portfolio.png");
 }
+
 a:nth-of-type(3) .card_wrapper {
     background-image: url("../../images/projects/devscreate.png");
 }
+
 a:nth-of-type(4) .card_wrapper {
     background-image: url("../../images/projects/boozles.png");
 }
@@ -71,6 +79,7 @@ a:nth-of-type(4) .card_wrapper {
     margin-bottom: 0;
     padding: 0 0.5rem 1rem 0.5rem;
     color: #5d6771;
+    font-size: 25px;
 }
 
 .project_desc {
@@ -79,15 +88,28 @@ a:nth-of-type(4) .card_wrapper {
     width: 100%;
 }
 
-a:hover .card_wrapper {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
-    transform: scale3d(1.008, 1.008, 1);
-}
-
 .testimonials {
     margin-top: 16%;
 }
 
 .project-btn {
     margin: 1rem;
+    color: $white;
+    background-color: $orange;
+    border: none;
+    border-radius: 10%;
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+    box-shadow: $box-shadow;
+    &:hover {
+        color: $navy-blue;
+        background: none;
+        border: 2px solid $orange;
+    }
+}
+.project-category {
+    color: $orange;
+    background: white;
+    text-decoration: underline;
+    border: none;
 }

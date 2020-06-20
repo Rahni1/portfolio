@@ -29,38 +29,3 @@
     transform: scale(1.1);
   }
   
-  .site-main .skills .experience {
-    padding-left: 1rem;
-  }
-  
-  .site-main .skills .experience span {
-    display: block;
-  }
-  
-
-  // services 
-  
-.site-main .services-area {
-  padding: 7rem 2rem;
-}
-
-.site-main .services-area .services-title {
-  padding: 0 14rem;
-}
-
-.site-main .services-area .services-title h1 {
-font-size: 35px;
-}
-
-.site-main > .services-area .services {
-  background: rgba(248, 252, 253, 0.973);
-  padding: 2rem 0;
-  width: 16rem;
-  height: 20rem;
-  margin: 5rem .5rem;
-  transition: box-shadow .7s ease;
-}
-
-.site-main > .services-area .services:hover {
-  box-shadow: $box-shadow;
-}
