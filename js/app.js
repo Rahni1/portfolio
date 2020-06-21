@@ -85,3 +85,4 @@ document.getElementById("boozles-code").onclick = function () {
 document.getElementById("boozles-site").onclick = function () {
     location.href = "https://rahni1.github.io/Boozles/";
 };
+
