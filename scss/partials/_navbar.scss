@@ -1,28 +1,40 @@
-.header .main-menu .navbar .navbar-brand {
+
+.header .main-menu .navbar .navbar-brand{
   padding: 0 2rem 0 5rem;
 }
 
-.header .main-menu .navbar {
-  padding: 1rem 20rem;
+.header .main-menu .navbar{
+  padding: 1rem 20rem ;
 }
 
-.header .main-menu .nav-item .nav-link {
-  font: normal 500 15px/2px $roboto;
+.header .main-menu .nav-item .nav-link{
+  font: normal 500 15px/2px var(--roboto);
   text-transform: uppercase;
   padding: 1.7rem;
-  color: $title-color;
+  color: var(--title-color);
 }
 
-.header .main-menu .navbar-nav .active a {
-  background: $orange;
+.header .main-menu .navbar-nav .active a{
+  background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.header .main-menu .navbar-nav a:hover {
-  background: $orange;
+.header .main-menu .navbar-nav a:hover{
+  background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0; right: 0;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  z-index: 999;
+  transition: background 1s ease;
 }

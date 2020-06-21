@@ -35,17 +35,18 @@
     content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <title>Rahni - Full Stack Developer</title>
 </head>
-<header class="header">
+<div id="container">
+<header class="header" id="header">
   <div class="main-menu">
-    </select>
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><img src="./images/logo.png" width="65px" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="mr-auto"></div>
         <ul class="navbar-nav">
@@ -66,7 +67,7 @@
     </nav>
   </div>
 </header>
-<main class="site-main">
+<main class="site-main" id="body">
   <section class="site-banner">
     <div class="container">
       <div class="row">
@@ -308,7 +309,52 @@
             </div>
           </div>
         </section>
+        
+				<section id="section" class="contact-wrap">
+          <form action="https://formspree.io/rahnidemeis@gmail.com" 
+          class="contact-form"
+          method="POST">
+          <div class="row justify-content-center">
+					<div class="col-sm-12">
+					  <div class="input-block">
+						<label for="">First Name</label>
+						<input type="text" class="form-control">
+					  </div>
+					</div>
+					<div class="col-sm-12">
+					  <div class="input-block">
+						<label for="">Last Name</label>
+						<input type="text" class="form-control">
+					  </div>
+					</div>
+					<div class="col-sm-12">
+					  <div class="input-block">
+						<label for="">Email</label>
+						<input type="text" class="form-control">
+					  </div>
+					</div>
+					<div class="col-sm-12">
+					  <div class="input-block textarea">
+						<label for="">Drop your message here</label>
+						<textarea rows="3" type="text" class="form-control"></textarea>
+					  </div>
+					</div>
+					<div class="col-sm-12">
+					  <button class="square-button">Send</button>
+          </div>
+        </div>
+				  </form>
+        </section>
+        <div id="footer">
+<section class="sec1"></section>
+<section class="footer">
+  <small class="copyright"> &copy; <script>
+    document.write(new Date().getFullYear())
+  </script> Rahni De-Meis</small>
+</section>
+</div>
 </main>
+</div>
 <script src="./js/jquery.3.4.1.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="vendor/isotope.min.js"></script>
@@ -341,11 +387,4 @@
                 <input type="email" name="email" placeholder="Enter your Email" required>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your Message" required></textarea>
                 <button class="form-btn" type="submit" value="Send">Submit</button>
-              </div>
-          </div>
-        </div>
-      </div>
-        <p class="copyright"> &copy; <script>
-            document.write(new Date().getFullYear())
-          </script> Rahni De-Meis</p>
-      </div> -->
+              -->

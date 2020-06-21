@@ -9,7 +9,10 @@
 @import 'partials/about';
 @import 'partials/footer';
 
-
+body {
+  height: 100%;
+  min-height: 100%;
+}
 .site-main .site-banner {
   background: white;
 }
@@ -58,7 +61,7 @@ button:hover
   padding: .8rem 2.2rem;
   font: normal 500 16px/20px $roboto;
   position: relative;
-  border: 3px solid transparent;
+  // border: 3px solid transparent;
   border-radius: 4px;
 }
 
@@ -93,9 +96,6 @@ button:hover
 }
 
 .button.secondary-button:hover{
-  // background: $gradient;
-  // color: whitesmoke;
-  // box-shadow: $box-shadow;
   background: whitesmoke;
   background-clip: padding-box;
   color: $navy-blue;
