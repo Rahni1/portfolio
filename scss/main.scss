@@ -8,6 +8,7 @@
 @import 'partials/navbar';
 @import 'partials/about';
 @import 'partials/footer';
+@import 'partials/project1';
 
 body {
   height: 100%;
@@ -49,19 +50,19 @@ font: normal bold 50px/72px $roboto;
 }
 
 
-button:focus,
-button:active
-button:hover
-.btn:active,
-.btn.active{
-    outline: 0px !important;
-    box-shadow: none !important;
-}
+// button:focus,
+// button:active
+// button:hover
+// .btn:active,
+// .btn.active{
+//     outline: 0px !important;
+//     box-shadow: none !important;
+// }
 .button{
   padding: .8rem 2.2rem;
   font: normal 500 16px/20px $roboto;
   position: relative;
-  // border: 3px solid transparent;
+  border: 2px solid $orange;
   border-radius: 4px;
 }
 
@@ -71,15 +72,7 @@ button:hover
   color: whitesmoke;
   transition: background .6s ease;
   box-shadow: $box-shadow;
-}
-
-.button.primary-button:hover{
-  background: whitesmoke;
-  background-clip: padding-box;
-  color: $navy-blue;
-}
-
-.button.primary-button::after, .button.secondary-button::after{
+&::after { 
   position: absolute;
   top: -2px; left: -2px;
   bottom: -2px;  right: -2px;
@@ -88,11 +81,27 @@ button:hover
   z-index: -1;
   border-radius: 4px;
 }
+}
+
+.button.primary-button:hover{
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: $navy-blue;
+}
 
 .button.secondary-button{
   background: white;
   background-clip: padding-box;
   transition: background .6s ease;
+&::after {
+  position: absolute;
+  top: -2px; left: -2px;
+  bottom: -2px;  right: -2px;
+  background: $orange;
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
 }
 
 .button.secondary-button:hover{

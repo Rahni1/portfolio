@@ -1,43 +1,29 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
 
-//     let $btns = $('.projects .button-group button');
+    let $btns = $('.projects .button-group button');
 
 
-//     $btns.click(function (e) {
+    $btns.click(function (e) {
 
-//         $('.projects .button-group button').removeClass('active');
-//         e.target.classList.add('active');
+        $('.projects .button-group button').removeClass('active');
+        e.target.classList.add('active');
 
-//         let selector = $(e.target).attr('data-filter');
-//         $('.projects .grid').isotope({
-//             filter: selector
-//         });
+        let selector = $(e.target).attr('data-filter');
+        $('.projects .grid').isotope({
+            filter: selector
+        });
 
-//         return false;
-//     })
+        return false;
+    })
 
-//     $('.projects .button-group #btn1').trigger('click');
+    $('.projects .button-group #btn1').trigger('click');
 
-//     $('.projects .grid .test-popup-link').magnificPopup({
-//         type: 'image',
-//         gallery: { enabled: true }
-//     });
-
-//     // Owl-carousel
-//     $('.site-main .about-area .owl-carousel').owlCarousel({
-//         loop: true,
-//         autoplay: true,
-//         dots: true,
-//         responsive: {
-//             0: {
-//                 items: 1
-//             },
-//             560: {
-//                 items: 2
-//             }
-//         }
-//     })
+    $('.projects .grid .test-popup-link').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true }
+    });
+})
   
 $(document).ready(function () {
     // sticky navbar
@@ -58,7 +44,14 @@ $(document).ready(function () {
 
     navbarFixed();
 });
+
 // buttons - projects
+document.getElementById("cv-btn").onclick = function () {
+  location.href = "../html/CV.html";
+};
+document.getElementById("cv").onclick = function () {
+  location.href = "../html/CV.html";
+}; 
 document.getElementById("ecommerce-code").onclick = function () {
     location.href = "https://github.com/Rahni1/ecommerce-website";
 };

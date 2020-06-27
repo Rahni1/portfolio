@@ -22,11 +22,6 @@
     letter-spacing: 10px;
   }
 
-  .site-main .brand-area .experience-area .years-area {
-    padding-left: 1%;
-    width: 49%;
-  }
-
   .site-main .project-area .button-group button {
     font: normal 500 18px/40px var(--roboto);
   }
@@ -39,10 +34,6 @@
 @media only screen and (max-width: 1910px) {
   .header_area .main-menu .navbar {
     padding: 1rem;
-  }
-
-  .container {
-    max-width: 90%;
   }
 
   .site-main .brand-area,

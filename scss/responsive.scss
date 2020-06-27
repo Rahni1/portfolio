@@ -26,12 +26,6 @@
         letter-spacing: 10px;
     }
 
-    .site-main .brand-area .experience-area .years-area{
-        padding-left: 1%;
-        width: 49%;
-    }
-
-
     .site-main .project-area .button-group button{
         font: normal 500 18px/40px var(--roboto);
     }
@@ -48,15 +42,13 @@
         padding: 1rem;
     }
 
-    .container{
-        max-width: 90%;
-    }
+    // .container {
+    //     max-width: 90%;
+    // }
 
     .site-main .brand-area,
     .site-main .services-area .services-title,
     .site-main .about-area{
         padding: 3% 4%;
     }
-
-
 }
