@@ -46,12 +46,9 @@ $(document).ready(function () {
 });
 
 // buttons - projects
-document.getElementById("cv-btn").onclick = function () {
-  location.href = "../html/CV.html";
-};
 document.getElementById("cv").onclick = function () {
   location.href = "../html/CV.html";
-}; 
+};
 
 document.getElementById("ecommerce-code").onclick = function () {
     location.href = "https://github.com/Rahni1/ecommerce-website";
