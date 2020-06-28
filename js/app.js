@@ -52,6 +52,7 @@ document.getElementById("cv-btn").onclick = function () {
 document.getElementById("cv").onclick = function () {
   location.href = "../html/CV.html";
 }; 
+
 document.getElementById("ecommerce-code").onclick = function () {
     location.href = "https://github.com/Rahni1/ecommerce-website";
 };
@@ -107,4 +108,3 @@ $(document).ready(function(){
 	})
 	
 });
-

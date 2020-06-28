@@ -39,7 +39,7 @@
   width: 500%;
   margin: 0px;
   left: 0;
-  animation: 20s slider infinite;
+  animation: 12s slider infinite;
 }
 
 @keyframes slider {
@@ -136,7 +136,7 @@
   width: 460px;
   transition: transform 0.5s;
   position: relative;
-  margin: 4rem 3rem;
+  margin: 6rem 3rem;
   border: 1px solid #dedcdc;
   border-radius: 6px;
   background: #e4f2f9;
