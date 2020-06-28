@@ -1,7 +1,6 @@
-/* if the viewport is equal to 340px or less than that */
 @media only screen and (max-width: 340px) {
-  .header_area .main-menu .navbar,
-.header_area .main-menu .navbar .navbar-brand,
+  .header .main-menu .navbar,
+.header .main-menu .navbar .navbar-brand,
 .site-main .services-area {
     padding: 2%;
     margin: 0%;
@@ -15,22 +14,66 @@
     width: 13rem;
   }
 }
-/* if the viewport is equal to 340px or less than that */
 @media only screen and (max-width: 792px) {
-  .site-main .about-area .about-title h2 > span {
+  .site-main .about .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
+  }
+
+  .site-main .skills .first-row .col-lg-1 > .single-skill {
+    width: 260px;
+  }
+
+  .social-media {
+    margin-top: -20px;
+    margin-left: 40px;
+  }
+
+  #slider .row {
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: -40px;
+    animation: none important;
+  }
+
+  .contact-header {
+    font-size: 35px;
+  }
+
+  .para {
+    padding-bottom: 20px;
+  }
+
+  .card_wrapper {
+    width: 300px;
+  }
+
+  .link {
+    height: 350px;
+    margin-bottom: 230px;
+    margin-left: -40px;
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+
+  .header .main-menu .navbar,
+.header .main-menu .navbar .navbar-brand,
+.site-main .services-area {
+    padding: 2%;
+    margin: 0%;
   }
 
   .site-main .project-area .button-group button {
     font: normal 500 18px/40px var(--roboto);
   }
 
-  .site-main .about-area .about-title p {
+  .site-main .about .about-title p {
     padding: 0%;
   }
 }
-/* if the viewport is equal to 1910px or less than that */
 @media only screen and (max-width: 1910px) {
   .header_area .main-menu .navbar {
     padding: 1rem;
@@ -38,7 +81,7 @@
 
   .site-main .brand-area,
 .site-main .services-area .services-title,
-.site-main .about-area {
+.site-main .about {
     padding: 3% 4%;
   }
 }

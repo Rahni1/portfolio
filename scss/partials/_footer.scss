@@ -41,18 +41,17 @@ body {
    height:100%;
 }
 
- 
-.footer .copyright {
+.copyright {
+    bottom: -280px;
     color: $white;
     text-align: center;
     position: absolute;
-    margin: 12% 0 0 2%;
 }
 
 // keep footer at bottom
 #container {
     min-height:100%;
-    position:relative;
+    position: relative;
  }
  #header {
     padding:10px;
@@ -84,7 +83,7 @@ body {
     transition: .5s;
     border: 1px solid #fff;
     color: $white;
-    margin: 10px 8px;
+    margin: 10px 0px;
     display: inline-block;
     font-size: 20px;
     padding: 10px 14px;

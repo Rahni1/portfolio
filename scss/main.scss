@@ -50,14 +50,15 @@ font: normal bold 50px/72px $roboto;
 }
 
 
-// button:focus,
-// button:active
-// button:hover
-// .btn:active,
-// .btn.active{
-//     outline: 0px !important;
-//     box-shadow: none !important;
-// }
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
 .button{
   padding: .8rem 2.2rem;
   font: normal 500 16px/20px $roboto;
@@ -102,6 +103,7 @@ font: normal bold 50px/72px $roboto;
   z-index: -1;
   border-radius: 4px;
 }
+
 }
 
 .button.secondary-button:hover{
