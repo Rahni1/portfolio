@@ -30,7 +30,6 @@
   .site-main .skills .first-row .col-lg-1 > .single-skill {
     width: 260px;
   }
-  
 
   #slider .row {
     position: relative;
@@ -81,4 +80,18 @@
   .site-main .about {
     padding: 3% 4%;
   }
+}
+ @media (min-width: 768px) and (max-width: 1024px) {
+   .skills .container-fluid {
+     margin-left: 30%;
+   }
+ }
+ @media (min-width: 1281px) {
+   .contact-wrap,
+   .projects {
+     margin-left: 200px;
+   }
+   .services-area {
+     margin-left: 130px;
+   }
 }

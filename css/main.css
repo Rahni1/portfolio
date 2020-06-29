@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .site-main .skills {
   padding: 1rem 1rem;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 .site-main .skills .first-row .col-lg-1 {
@@ -148,7 +148,7 @@
 }
 
 a:nth-of-type(2) .card_wrapper {
-  background-image: url("../../images/projects/portfolio.png");
+  background-image: url("../../images/projects/boozles.png");
 }
 
 a:nth-of-type(3) .card_wrapper {
@@ -156,7 +156,7 @@ a:nth-of-type(3) .card_wrapper {
 }
 
 a:nth-of-type(4) .card_wrapper {
-  background-image: url("../../images/projects/boozles.png");
+  background-image: url("../../images/projects/portfolio.png");
 }
 
 .project_summary {
@@ -439,7 +439,7 @@ p.para {
 .footer:before {
   content: "";
   width: 50vw;
-  height: 100px;
+  height: 120px;
   position: absolute;
   top: -48px;
   left: 0;
@@ -450,7 +450,7 @@ p.para {
 .footer:after {
   content: "";
   width: 50vw;
-  height: 100px;
+  height: 120px;
   position: absolute;
   top: -48px;
   right: 0;

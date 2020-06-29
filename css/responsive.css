@@ -6,12 +6,21 @@
     margin: 0%;
   }
 
+  .social-media {
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+
   .site-main .site-banner .site-title h1 {
     font-size: 41px;
   }
 
   .site-main > .services-area .services {
     width: 13rem;
+  }
+
+  .card_wrapper {
+    width: 300px;
   }
 }
 @media only screen and (max-width: 792px) {
@@ -22,11 +31,6 @@
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
     width: 260px;
-  }
-
-  .social-media {
-    margin-top: -20px;
-    margin-left: 40px;
   }
 
   #slider .row {
@@ -43,10 +47,6 @@
 
   .para {
     padding-bottom: 20px;
-  }
-
-  .card_wrapper {
-    width: 300px;
   }
 
   .link {
@@ -83,6 +83,21 @@
 .site-main .services-area .services-title,
 .site-main .about {
     padding: 3% 4%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills .container-fluid {
+    margin-left: 30%;
+  }
+}
+@media (min-width: 1281px) {
+  .contact-wrap,
+.projects {
+    margin-left: 200px;
+  }
+
+  .services-area {
+    margin-left: 130px;
   }
 }
 
