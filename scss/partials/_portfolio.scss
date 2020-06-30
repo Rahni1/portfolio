@@ -35,12 +35,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
- .card_wrapper {
+.card_wrapper {
     width: 460px;
     transition: transform 0.5s;
     position: relative;
-    // height: 470px;
-     margin: 6rem 3rem;
+    margin: 6rem 3rem;
     border: 1px solid #dedcdc;
     border-radius: 6px;
     background: #e4f2f9;
@@ -51,18 +50,19 @@
     background-repeat: no-repeat;
 }
 
-
- a:nth-of-type(2) .card_wrapper {
-    background-image: url("../../images/projects/boozles.png");   
+// images
+a:nth-of-type(2) .card_wrapper {
+    background-image: url("../../images/projects/boozles.png");
 }
 
- a:nth-of-type(3) .card_wrapper {
+a:nth-of-type(3) .card_wrapper {
     background-image: url("../../images/projects/devscreate.png");
 }
- a:nth-of-type(4) .card_wrapper {
+a:nth-of-type(4) .card_wrapper {
     background-image: url("../../images/projects/portfolio.png");
 }
 
+// card text
 .project_summary {
     margin-top: 260px;
     position: relative;
@@ -88,12 +88,9 @@
     width: 100%;
 }
 
-.testimonials {
-    margin-top: 16%;
-}
-
+// buttons
 .project-btn {
-    margin: 0 .8rem 1rem 0;
+    margin: 0 0.8rem 1rem 0;
     color: $white;
     background-color: $orange;
     border: none;

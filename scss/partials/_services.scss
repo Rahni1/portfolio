@@ -1,9 +1,9 @@
 .site-main .services-area {
   padding: 7rem 2rem;
-}
 
-.site-main .services-area .services-title {
-  padding: 0 14rem;
+  .services-title {
+    padding: 0 14rem;
+  }
 }
 
 .site-main .services-area .services-title h1 {
@@ -17,8 +17,7 @@
   height: 20rem;
   margin: 5rem 0.5rem;
   transition: box-shadow 0.7s ease;
-}
-
-.site-main > .services-area .services:hover {
-  box-shadow: $box-shadow;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
 }

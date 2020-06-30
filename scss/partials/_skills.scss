@@ -1,73 +1,72 @@
 .site-main .skills {
-    padding: 1rem 1rem;
-    margin: 4rem 0;
-  }
- 
-  
-  .site-main .skills .first-row .col-lg-1 {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 2rem;
-  }
-  
-  .site-main .skills .first-row .col-lg-1 > .single-skill {
-   border: 1px solid $border-color;
-   text-align: center;
-   padding: 1.5rem 0;
-   margin: 0rem 0rem;
-   width: 290px;
-   height: 130px;
-   cursor: pointer;
-   transition: transform .4s ease;
-  }
-  
-  .site-main .skills .first-row .col-lg-1 > img {
-    width: 50%;
-  }
-  
-  .site-main .skills .first-row .col-lg-1 > .single-skill:hover {
+  padding: 1rem 1rem;
+  margin: 4rem 0;
+}
+
+.site-main .skills .first-row .col-lg-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.site-main .skills .first-row .col-lg-1 > .single-skill {
+  border: 1px solid $border-color;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin: 0rem 0rem;
+  width: 290px;
+  height: 130px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+
+  &:hover {
     box-shadow: $box-shadow;
     transform: scale(1.1);
   }
+}
 
-  #slider {
-    overflow: hidden;
-  }
+.site-main .skills .first-row .col-lg-1 > img {
+  width: 50%;
+}
 
-  #slider .row {
-    position: relative;
-    width: 500%;
-    margin: 0px;
+#slider {
+  overflow: hidden;
+}
+
+#slider .row {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  animation: 12s slider infinite;
+}
+
+@keyframes slider {
+  0% {
     left: 0;
-    animation: 12s slider infinite;
   }
-  
-  @keyframes slider {
-    0% {
-      left: 0;
-    }
-    20% {
-      left: 0;
-    }
-    25% {
-      left: -100%;
-    }
-    45% {
-      left: -100%;
-    }
-    50% {
-      left: -200%;
-    }
-    70% {
-      left: -200%;
-    }
-    75% {
-      left: -300%;
-    }
-    95% {
-      left: -300%;
-    }
-    100% {
-      left: -400%;
-    }
+  20% {
+    left: 0;
   }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}

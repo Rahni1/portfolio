@@ -20,14 +20,13 @@
   cursor: pointer;
   transition: transform 0.4s ease;
 }
-
-.site-main .skills .first-row .col-lg-1 > img {
-  width: 50%;
-}
-
 .site-main .skills .first-row .col-lg-1 > .single-skill:hover {
   box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   transform: scale(1.1);
+}
+
+.site-main .skills .first-row .col-lg-1 > img {
+  width: 50%;
 }
 
 #slider {
@@ -74,7 +73,6 @@
 .site-main .services-area {
   padding: 7rem 2rem;
 }
-
 .site-main .services-area .services-title {
   padding: 0 14rem;
 }
@@ -91,7 +89,6 @@
   margin: 5rem 0.5rem;
   transition: box-shadow 0.7s ease;
 }
-
 .site-main > .services-area .services:hover {
   box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
@@ -184,10 +181,6 @@ a:nth-of-type(4) .card_wrapper {
   width: 100%;
 }
 
-.testimonials {
-  margin-top: 16%;
-}
-
 .project-btn {
   margin: 0 0.8rem 1rem 0;
   color: white;
@@ -215,12 +208,12 @@ a:nth-of-type(4) .card_wrapper {
   font: "Roboto", sans-serif 18px;
   outline: none;
   border: none;
+  border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
   -moz-box-shadow: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
+  -webkit-box-shadow: none;
   height: auto;
   padding: 30px 10px;
   width: 100%;
@@ -243,29 +236,19 @@ a:nth-of-type(4) .card_wrapper {
   line-height: 10px;
 }
 
-.wrap {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  margin-top: 450px;
-}
-
-.box {
-  font-size: 1.2em;
-  line-height: 1.6em;
-  text-align: center;
-}
-
 #section .wrap {
   text-align: center;
   width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 450px auto 0 auto;
 }
 
 #section .box {
   text-align: center;
-  margin: 5% 0 0 0;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  top: 5%;
   width: 100%;
 }
 
@@ -359,7 +342,8 @@ a:nth-of-type(4) .card_wrapper {
   transition: all 0.3s ease-out;
 }
 
-.contact-form .square-button:hover, .contact-form .square-button:focus {
+.contact-form .square-button:hover,
+.contact-form .square-button:focus {
   background-color: #E2474B;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
@@ -507,8 +491,7 @@ body {
   display: inline;
   font-size: 22px;
 }
-
-ul .social-item a {
+.social-item a {
   transition: 0.5s;
   border: 1px solid #fff;
   color: white;
@@ -518,7 +501,7 @@ ul .social-item a {
   padding: 10px 14px;
   border-radius: 50%;
 }
-ul .social-item a:hover {
+.social-item a:hover {
   border: 1px solid #E2474B;
   color: #E2474B;
 }
@@ -544,7 +527,6 @@ body {
   padding-top: 35%;
   font-weight: 500;
 }
-
 .site-main .site-banner .site-title h3::after {
   content: "";
   height: 2px;
