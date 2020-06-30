@@ -172,6 +172,7 @@ a:nth-of-type(4) .card_wrapper {
 
 .project_title {
   margin-bottom: 0;
+  margin-top: -50px;
   padding: 0 0.5rem 1rem 0.5rem;
   color: #5d6771;
   font-size: 25px;
@@ -188,7 +189,7 @@ a:nth-of-type(4) .card_wrapper {
 }
 
 .project-btn {
-  margin: 1rem;
+  margin: 0 0.8rem 1rem 0;
   color: white;
   background-color: #E2474B;
   border: none;
@@ -489,7 +490,7 @@ body {
 #footer {
   position: absolute;
   bottom: 0;
-  margin-left: -28px;
+  margin-left: -26px;
   width: 100%;
   height: 80px;
 }

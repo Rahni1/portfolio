@@ -6,11 +6,6 @@
     margin: 0%;
   }
 
-  .social-media {
-    margin-top: -15px;
-    margin-left: 40px;
-  }
-
   .site-main .site-banner .site-title h1 {
     font-size: 41px;
   }
@@ -22,11 +17,26 @@
   .card_wrapper {
     width: 300px;
   }
+
+  #footer {
+    margin-left: -294px;
+  }
 }
 @media only screen and (max-width: 792px) {
   .site-main .about .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
+  }
+
+  .social-media {
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+
+  .card_wrapper {
+    width: 320px;
+    display: flex;
+    margin: 0 auto;
   }
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
