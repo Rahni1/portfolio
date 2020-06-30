@@ -37,6 +37,7 @@
     width: 320px;
     display: flex;
     margin: 0 auto;
+    margin-left: 2rem;
   }
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
