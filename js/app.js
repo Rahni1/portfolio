@@ -53,6 +53,9 @@ document.getElementById("cv").onclick = function () {
 document.getElementById("ecommerce-code").onclick = function () {
     location.href = "https://github.com/Rahni1/ecommerce-website";
 };
+document.getElementById("ecommerce-more").onclick = function () {
+  location.href = "../html/project1.html";
+};
 
 document.getElementById("portfolio-code").onclick = function () {
     location.href = "https://github.com/Rahni1/App-Dev-Portfolio";

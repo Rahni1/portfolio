@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
 .site-main .skills {
   padding: 1rem 1rem;
   margin: 4rem 0;
@@ -504,6 +505,28 @@ body {
 .social-item a:hover {
   border: 1px solid #E2474B;
   color: #E2474B;
+}
+
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  border: 2px solid #0E2449;
+  width: 60%;
+}
+
+.ecommerce-title {
+  font: normal bold 30px/30px "Roboto", sans-serif;
+  color: #0E2449;
+  text-align: center;
+}
+
+.caption {
+  font-family: "Lobster Two", cursive;
+  color: #E2474B;
+  font-size: 20px;
+  margin: -3rem 0 0 14.2rem;
 }
 
 body {
