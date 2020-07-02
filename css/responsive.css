@@ -33,11 +33,22 @@
     margin-left: 40px;
   }
 
-  .card_wrapper {
-    width: 320px;
+  .projects a {
+    width: 350px;
     display: flex;
-    margin: 0 auto;
-    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+  }
+
+  .card_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects a .project_title {
+    margin-top: -100px;
   }
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
@@ -53,6 +64,7 @@
   }
 
   .contact-header {
+    margin-top: -200px;
     font-size: 35px;
   }
 
@@ -61,7 +73,7 @@
   }
 
   .link {
-    height: 350px;
+    height: 200px;
     margin-bottom: 230px;
     margin-left: -40px;
   }

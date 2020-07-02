@@ -32,11 +32,21 @@
     margin-left: 40px;
   }
 
-  .card_wrapper {
-    width: 320px;
-    display: flex;
-    margin: 0 auto;
-    margin-left: 2rem;
+  .projects a {
+    width: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 300px;
+  }
+.card_wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+  .projects a .project_title {
+    margin-top: -100px;
   }
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
@@ -51,6 +61,7 @@
     animation: none important;
   }
   .contact-header {
+    margin-top: -200px;
     font-size: 35px;
   }
   .para {
@@ -58,7 +69,7 @@
   }
 
   .link {
-    height: 350px;
+    height: 200px;
     margin-bottom: 230px;
     margin-left: -40px;
   }
@@ -93,11 +104,13 @@
     padding: 3% 4%;
   }
 }
+// tablets, ipads - portrait
 @media (min-width: 768px) and (max-width: 1024px) {
   .skills .container-fluid {
     margin-left: 30%;
   }
 }
+// desktops
 @media (min-width: 1281px) {
   .contact-wrap,
   .projects {
