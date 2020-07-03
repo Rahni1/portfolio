@@ -520,6 +520,7 @@ body {
   font: normal bold 30px/30px "Roboto", sans-serif;
   color: #0E2449;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .caption {
@@ -527,6 +528,24 @@ body {
   color: #E2474B;
   font-size: 20px;
   margin: -50px 0 0 20%;
+}
+
+.project-details {
+  margin: 6rem auto 2rem auto;
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid #E2474B;
+}
+.project-details h2 {
+  text-align: center;
+  color: #E2474B;
+  font-family: "Lobster Two", cursive;
+}
+
+.project-details ul li {
+  color: #0E2449;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 body {

@@ -11,10 +11,28 @@ width: 60%;
     font: normal bold 30px/30px $roboto;
     color: $navy-blue;
     text-align: center;
+    margin-top: 2rem;
 }
 .caption {
     font-family: $caption;
     color: $orange;
     font-size: 20px;
     margin: -50px 0 0 20%;
+}
+.project-details {
+  margin: 6rem auto 2rem auto;
+    width: 60%;
+    padding: .5rem;
+    border: 1px solid $orange;
+ h2 {
+    text-align: center;
+    color: $orange;
+    font-family: $caption;
+}
+}
+
+.project-details ul li {
+color: $navy-blue;
+font-family: $roboto;
+font-size: 14px;
 }
