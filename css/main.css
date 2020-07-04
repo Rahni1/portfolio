@@ -19,10 +19,16 @@
   width: 290px;
   height: 130px;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease;
+  -o-transition: -o-transform 0.4s ease;
   transition: transform 0.4s ease;
 }
 .site-main .skills .first-row .col-lg-1 > .single-skill:hover {
   box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -39,9 +45,39 @@
   width: 500%;
   margin: 0px;
   left: 0;
+  -webkit-animation: 12s slider infinite;
   animation: 12s slider infinite;
 }
 
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
 @keyframes slider {
   0% {
     left: 0;
@@ -117,6 +153,8 @@
 
 .link:hover .card_wrapper {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
+  -webkit-transform: scale3d(1.008, 1.008, 1);
+  -ms-transform: scale3d(1.008, 1.008, 1);
   transform: scale3d(1.008, 1.008, 1);
 }
 
@@ -132,10 +170,15 @@
 
 .card_wrapper {
   width: 460px;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  -o-transition: -o-transform 0.5s;
   transition: transform 0.5s;
   position: relative;
   margin: 6rem 3rem;
   border: 1px solid #dedcdc;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
   border-radius: 6px;
   background: #e4f2f9;
   display: flex;
@@ -187,6 +230,8 @@ a:nth-of-type(4) .card_wrapper {
   color: white;
   background-color: #E2474B;
   border: none;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
   border-radius: 10%;
   font-size: 14px;
   padding: 0.4rem 0.8rem;
@@ -209,12 +254,12 @@ a:nth-of-type(4) .card_wrapper {
   font: "Roboto", sans-serif 18px;
   outline: none;
   border: none;
-  border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+  border-radius: 0;
   -moz-box-shadow: none;
-  box-shadow: none;
   -webkit-box-shadow: none;
+  box-shadow: none;
   height: auto;
   padding: 30px 10px;
   width: 100%;
@@ -301,8 +346,8 @@ a:nth-of-type(4) .card_wrapper {
   margin: 0;
   outline: none;
   border: none;
-  -moz-border-radius: 0;
   -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -323,8 +368,8 @@ a:nth-of-type(4) .card_wrapper {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -347,6 +392,8 @@ a:nth-of-type(4) .card_wrapper {
 .contact-form .square-button:focus {
   background-color: #E2474B;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
   transform: translateY(-4px);
 }
 
@@ -441,6 +488,8 @@ p.para {
   top: -48px;
   right: 0;
   background: #0E2449;
+  -webkit-transform: skewY(-8deg);
+  -ms-transform: skewY(-8deg);
   transform: skewY(-8deg);
 }
 
@@ -493,6 +542,9 @@ body {
   font-size: 22px;
 }
 .social-item a {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #fff;
   color: white;
@@ -500,6 +552,8 @@ body {
   display: inline-block;
   font-size: 20px;
   padding: 10px 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .social-item a:hover {

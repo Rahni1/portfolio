@@ -30,6 +30,8 @@
     top: -48px;
     right: 0;
     background: $navy-blue;
+    -webkit-transform: skewY(-8deg);
+    -ms-transform: skewY(-8deg);
     transform: skewY(-8deg);
 }
 
@@ -80,6 +82,9 @@ body {
     display: inline;
     font-size: 22px;
     a {
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
         border: 1px solid #fff;
         color: $white;
@@ -87,6 +92,8 @@ body {
         display: inline-block;
         font-size: 20px;
         padding: 10px 14px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         border-radius: 50%;
         &:hover {
             border: 1px solid $orange;

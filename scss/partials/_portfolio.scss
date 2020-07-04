@@ -23,6 +23,8 @@
 
 .link:hover .card_wrapper {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
+    -webkit-transform: scale3d(1.008, 1.008, 1);
+    -ms-transform: scale3d(1.008, 1.008, 1);
     transform: scale3d(1.008, 1.008, 1);
 }
 
@@ -37,10 +39,15 @@
 }
 .card_wrapper {
     width: 460px;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
     transition: transform 0.5s;
     position: relative;
     margin: 6rem 3rem;
     border: 1px solid #dedcdc;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px; 
     border-radius: 6px;
     background: #e4f2f9;
     display: flex;
@@ -93,6 +100,8 @@ a:nth-of-type(4) .card_wrapper {
     color: $white;
     background-color: $orange;
     border: none;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%; 
     border-radius: 10%;
     font-size: 14px;
     padding: 0.4rem 0.8rem;
