@@ -27,7 +27,7 @@ $(document).ready(function () {
   
 $(document).ready(function () {
     // sticky navbar
-    let nav_offset_top = $('.header').height() + 50;
+    let nav_offset_top = $('.header').height();
 
     function navbarFixed() {
         if ($('.header').length) {

@@ -108,7 +108,8 @@
   }
 }
 .site-main .services-area {
-  padding: 7rem 2rem;
+  padding: 7rem 2rem 0rem 2rem;
+  margin-bottom: -100px;
 }
 .site-main .services-area .services-title {
   padding: 0 14rem;
@@ -136,6 +137,7 @@
   letter-spacing: 0.77px;
   font-weight: 400;
   color: #777777;
+  padding-top: 210px;
 }
 
 .link {
@@ -197,7 +199,7 @@ a:nth-of-type(3) .card_wrapper {
 }
 
 a:nth-of-type(4) .card_wrapper {
-  background-image: url("../images/projects/Jira.png");
+  background-image: url("../images/projects/Jira2.png");
 }
 
 .project_summary {
@@ -282,7 +284,7 @@ a:nth-of-type(4) .card_wrapper {
   line-height: 10px;
 }
 
-#section .wrap {
+#contact .wrap {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -290,7 +292,7 @@ a:nth-of-type(4) .card_wrapper {
   margin: 450px auto 0 auto;
 }
 
-#section .box {
+#contact .box {
   text-align: center;
   font-size: 1.2em;
   line-height: 1.6em;
@@ -300,7 +302,7 @@ a:nth-of-type(4) .card_wrapper {
 
 .contact-form {
   width: 100%;
-  margin: 200px auto 0 auto;
+  margin: 210px auto 0 auto;
   padding: 0px 40px;
 }
 
@@ -440,6 +442,10 @@ a:nth-of-type(4) .card_wrapper {
 
 .site-main .about {
   padding: 8rem 5rem;
+}
+
+#about {
+  padding-top: 190px;
 }
 
 .site-main .about .about-title h2 > span {
