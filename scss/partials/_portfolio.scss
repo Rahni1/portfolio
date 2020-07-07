@@ -1,122 +1,34 @@
-.projects {
-    font-family: $roboto;
-    font-size: 15px;
-    letter-spacing: 0.77px;
-    font-weight: 400;
-    color: $text-color;
-    padding-top: 210px;
+#portfolio {
+    padding-top: 220px;
 }
-
-.link {
-    text-decoration: none;
-    color: inherit !important;
-    height: 425px;
-    margin-bottom: 50px;
-
-    &:hover {
-        text-decoration: none;
-
-        .project_title {
-            text-decoration: underline;
-        }
-    }
-}
-
-.link:hover .card_wrapper {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.09);
-    -webkit-transform: scale3d(1.008, 1.008, 1);
-    -ms-transform: scale3d(1.008, 1.008, 1);
-    transform: scale3d(1.008, 1.008, 1);
-}
-
-.wrapper {
-    max-width: 850px;
-     margin: 20px auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.card_wrapper {
-    width: 460px;
-    -webkit-transition: -webkit-transform 0.5s;
-    -moz-transition: -moz-transform 0.5s;
-    -o-transition: -o-transform 0.5s;
-    transition: transform 0.5s;
-    position: relative;
-    margin: 6rem 3rem;
-    border: 1px solid #dedcdc;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px; 
-    border-radius: 6px;
-    background: #e4f2f9;
-    display: flex;
-    flex-direction: column;
-    background: url("../../images/projects/ecommerce.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-// images
-a:nth-of-type(2) .card_wrapper {
-    background-image: url("../../images/projects/boozles.png");
-}
-
-a:nth-of-type(3) .card_wrapper {
-    background-image: url("../../images/projects/devscreate.png");
-}
-a:nth-of-type(4) .card_wrapper {
-   background-image: url("../images/projects/Jira.png");
-}
-// card text
-.project_summary {
-    margin-top: 260px;
-    position: relative;
-    padding: 0 20px;
-    background: #fff;
-    flex: 1;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    text-align: center;
-}
-
-.project_title {
-    margin-bottom: 0;
-    margin-top: -50px;
-    padding: 0 0.5rem 1rem 0.5rem;
-    color: #5d6771;
-    font-size: 25px;
-}
-
-.project_desc {
-    margin: 0;
-    font-weight: 300;
+.site-main .project-area {
+    padding: 4rem 0;
     width: 100%;
 }
-
-// buttons
-.project-btn {
-    margin: 0 0.8rem 1rem 0;
-    color: $white;
-    background-color: $orange;
+.project-area .our-project {
+    margin-top: 3rem;
+}
+.site-main .project-area .button-group button {
+    background: transparent;
     border: none;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%; 
-    border-radius: 10%;
-    font-size: 14px;
-    padding: 0.4rem 0.8rem;
-    box-shadow: $box-shadow;
-    &:hover {
-        color: $navy-blue;
-        background: none;
-        border: 2px solid $orange;
-    }
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
 }
 
-.project-category {
-    color: $orange;
-    background: white;
+.site-main .project-area .button-group button + button {
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4 {
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.our-project span a {
+    color: $text-color;
+    margin-right: 1rem;
     text-decoration: underline;
-    border: none;
 }

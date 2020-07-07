@@ -1,6 +1,5 @@
 <!-- strict mode - so older browsers show behaviour similar to modern browsers -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
 <head>
@@ -16,7 +15,7 @@
 
     gtag('config', 'UA-154932936-2');
   </script>
-<!-- meta tags -->
+  <!-- meta tags -->
   <meta charset="UTF-8">
   <meta name="description" content="Hi, I'm Rahni De-Meis. 
         I'm a Junior Web Developer based in London, UK. 
@@ -33,14 +32,14 @@
   <link rel="icon" href="%PUBLIC_URL%/../favicon.ico" />
   <meta name="author" content="Rahni De-Meis">
   <meta name="viewport"
-  content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+    content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
 
   <!-- css, bootstrap, fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/responsive.css">
-  
+
   <title>Rahni - Full Stack Developer</title>
 </head>
 <div id="container">
@@ -248,71 +247,81 @@
             </div>
           </section>
           <!-- projects -->
-          <section class="projects" id="portfolio">
-         
+          <section class="project-area" id="portfolio">
+            <div class="container">
               <div class="project-title pb-5">
                 <h1 class="text-uppercase title-h1">Projects</h1>
               </div>
+
               <div class="button-group">
-                <button type="button" class="project-category active text-uppercase">All</button>
-                <button type="button" class="project-category text-uppercase" data-filter=".latest">Latest</button>
-                <button type="button" class="project-category text-uppercase" data-filter=".frontend">Front End</button>
-                <button type="button" class="project-category text-uppercase" data-filter=".fullstack">Full
-                  Stack</button>
+                <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".latest">Latest</button>          
+                <button type="button" data-filter=".frontend">Front End</button>
+                <button type="button" data-filter=".fullstack">Full Stack</button>
               </div>
+
               <div class="row grid">
-                <a href="#" class="link fullstack latest">
-                  <article class="card_wrapper">
-                    <div class="project_summary">
-                      <h2 class="project_title">MERN Stack E-commerce Shop</h2>
-                      <p class="project_desc text-secondary">
-                        I integrated Braintree for Credit Card and Paypal Payment. Admin can
-                        update the status of the orders in the Admin Dashboard.</p>
-                      <button id="project1-code" class="project-btn text-uppercase">View code</button>
-                      <button class="project-btn text-uppercase" id="project1-more">View More</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item fullstack">
+                  <div class="our-project">
+                    <div class="img">
+                      <a class="test-popup-link" href="./images/projects/ecommerce.png">
+                        <img src="./images/projects/ecommerce.png" alt="Ecommerce" class="img-fluid">
+                      </a>
                     </div>
-                  </article>
-                </a>
+                    <div class="title py-4">
+                      <h4 class="text-uppercase">MERN Stack E-commerce Shop</h4>
+                      <span><a href="https://github.com/Rahni1/ecommerce-website">View Code</a>
+                        <a href="./html/project1.html">View More</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item frontend">
+                  <div class="our-project">
+                    <div class="img">
+                      <a class="test-popup-link" href="./images/projects/boozles.png">
+                        <img src="./images/projects/boozles.png" alt="Entertainment Website" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="title py-4">
+                      <h4 class="text-uppercase">JavaScript, HTML and CSS: Entertainment Website</h4>
+                      <span><a href="https://github.com/Rahni1/Boozles">View Code</a>
+                        <a href="https://rahni1.github.io/Boozles/">Live Website</a></span>
+                    </div>
+                  </div>
+                </div>
 
-                <a href="#" class="link frontend">
-                  <article class="card_wrapper">
-                    <div class="project_summary">
-                      <h2 class="project_title">JavaScript, HTML and CSS: Entertainment Website</h2>
-                      <p class="project_desc text-secondary">
-                        Boozles is an entertainment website which I built in
-                       JavaScript, HTML and CSS.
-                        I retrieved information from two different API's.</p>
-                      <button class="project-btn text-uppercase" id="project2-code">View code</button>
-                      <button class="project-btn text-uppercase" id="project2-site">Live Website</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item latest fullstack">
+                  <div class="our-project">
+                    <div class="img">
+                      <a class="test-popup-link" href="./images/projects/Jira.png">
+                        <img src="./images/projects/Jira.png" alt="Blog" class="img-fluid">
+                      </a>
                     </div>
-                  </article>
-                </a>
+                    <div class="title py-4">
+                      <h4 class="text-uppercase">MERN Stack Blog - Ongoing</h4>
+                      <span><a href="https://github.com/Rahni1/mern_blog">View Code</a>
+                        <a href="./html/project4.html">View More</a></span>
+                    </div>
+                  </div>
+                </div>
 
-                <a href="#" class="link frontend">
-                  <article class="card_wrapper">
-                    <div class="project_summary">
-                      <h2 class="project_title">React Project Planner</h2>
-                      <p class="project_desc text-secondary">
-                        DevsCreate is a website where software engineers can
-                        plan their next project. I built DevsCreate in
-                        React and I used localstorage to save user input.</p>
-                      <button class="project-btn text-uppercase" id="project3-code">View code</button>
-                      <button class="project-btn text-uppercase" id="project3-site">Live Website</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item frontend">
+                  <div class="our-project">
+                    <div class="img">
+                      <a class="test-popup-link" href="./images/projects/devscreate.png">
+                        <img src="./images/projects/devscreate.png" alt="React Project Planner" class="img-fluid">
+                      </a>
                     </div>
-                  </article>
-                </a>
+                    <div class="title py-4">
+                      <h4 class="text-uppercase">React Project Planner</h4>
+                      <span><a href="https://github.com/Rahni1/devscreate">View Code</a>
+                        <a href="https://rahni1.github.io/devscreate/">Live Website</a></span>
 
-                <a href="#" class="link fullstack latest">
-                  <article class="card_wrapper">
-                    <div class="project_summary">
-                      <h2 class="project_title">MERN Stack Blog - Ongoing</h2>
-                      <p class="project_desc para">I'm currently building a blog using MERN
-                        and I'm using Jira to manage the project.</p>
-                      <button class="project-btn text-uppercase" id="project4-code">View code</button>
                     </div>
-                  </article>
-                </a>
+                  </div>
+                </div>
               </div>
+            </div>
           </section>
 
           <section id="contact" class="contact-wrap">
@@ -383,7 +392,7 @@
 </div>
 <script src="./js/jquery.3.4.1.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script src="vendor/isotope.min.js"></script>
+<script src="./vendor/isotope/isotope.min.js"></script>
 <script src="./js/app.js"></script>
 </body>
 

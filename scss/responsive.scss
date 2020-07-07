@@ -13,9 +13,6 @@
   .site-main > .services-area .services {
     width: 13rem;
   }
-  .card_wrapper {
-    width: 300px;
-  }
 
   #footer {
     margin-left: -294px;
@@ -31,22 +28,13 @@
     margin-left: 40px;
   }
 
-  .projects a {
-    width: 350px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 300px;
-  }
+ 
 .card_wrapper {
  display: flex;
  justify-content: center;
  align-items: center;
 }
 
-  .projects a .project_title {
-    margin-top: -100px;
-  }
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
     width: 260px;
@@ -83,10 +71,6 @@
     margin: 0%;
   }
 
-  .site-main .project-area .button-group button {
-    font: normal 500 18px/40px var(--roboto);
-  }
-
   .site-main .about .about-title p {
     padding: 0%;
   }
@@ -111,8 +95,7 @@
 }
 // desktops
 @media (min-width: 1281px) {
-  .contact-wrap,
-  .projects {
+  .contact-wrap {
     margin-left: 200px;
   }
   .services-area {

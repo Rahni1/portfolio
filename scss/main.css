@@ -6,8 +6,12 @@
 }
 
 .site-main .skills .first-row .col-lg-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 2rem;
 }
 
@@ -20,15 +24,15 @@
   height: 130px;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.4s ease;
-  -moz-transition: -moz-transform 0.4s ease;
-  -o-transition: -o-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
+
 .site-main .skills .first-row .col-lg-1 > .single-skill:hover {
-  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -78,6 +82,7 @@
     left: -400%;
   }
 }
+
 @keyframes slider {
   0% {
     left: 0;
@@ -107,10 +112,12 @@
     left: -400%;
   }
 }
+
 .site-main .services-area {
   padding: 7rem 2rem 0rem 2rem;
   margin-bottom: -100px;
 }
+
 .site-main .services-area .services-title {
   padding: 0 14rem;
 }
@@ -125,10 +132,15 @@
   width: 16rem;
   height: 20rem;
   margin: 5rem 0.5rem;
+  -webkit-transition: -webkit-box-shadow 0.7s ease;
+  transition: -webkit-box-shadow 0.7s ease;
   transition: box-shadow 0.7s ease;
+  transition: box-shadow 0.7s ease, -webkit-box-shadow 0.7s ease;
 }
+
 .site-main > .services-area .services:hover {
-  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 
 #portfolio {
@@ -160,23 +172,15 @@
 }
 
 .site-main .project-area .grid .our-project .img a:hover img {
-  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-}
-
-.our-project span a {
-  color: #777777;
-  margin-right: 1rem;
-  text-decoration: underline;
+  -webkit-filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+          filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 .form-control {
   font: "Roboto", sans-serif 18px;
   outline: none;
   border: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
   border-radius: 0;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   height: auto;
@@ -232,8 +236,6 @@
   margin: 0;
   position: relative;
   margin-bottom: 20px;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -265,10 +267,7 @@
   margin: 0;
   outline: none;
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   height: auto;
@@ -287,11 +286,7 @@
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 0 60px;
@@ -310,9 +305,9 @@
 .contact-form .square-button:hover,
 .contact-form .square-button:focus {
   background-color: #E2474B;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
   transform: translateY(-4px);
 }
 
@@ -352,8 +347,10 @@
   left: 0;
   right: 0;
   background-color: white;
-  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   z-index: 999;
+  -webkit-transition: background 1s ease;
   transition: background 1s ease;
 }
 
@@ -372,7 +369,7 @@
 }
 
 .site-main .about .about-title .paragraph > p {
-  padding: 0.4rem 0;
+  padding: .4rem 0;
 }
 
 p.para {
@@ -400,7 +397,8 @@ p.para {
   top: -48px;
   left: 0;
   background: #0E2449;
-  transform: skewY(8deg);
+  -webkit-transform: skewY(8deg);
+          transform: skewY(8deg);
 }
 
 .footer:after {
@@ -412,7 +410,6 @@ p.para {
   right: 0;
   background: #0E2449;
   -webkit-transform: skewY(-8deg);
-  -ms-transform: skewY(-8deg);
   transform: skewY(-8deg);
 }
 
@@ -464,10 +461,9 @@ body {
   display: inline;
   font-size: 22px;
 }
+
 .social-item a {
   -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #fff;
   color: white;
@@ -475,19 +471,24 @@ body {
   display: inline-block;
   font-size: 20px;
   padding: 10px 14px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
 }
+
 .social-item a:hover {
   border: 1px solid #E2474B;
   color: #E2474B;
 }
 
 .project-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 4rem auto;
   border: 2px solid #ebebeb;
   width: 60%;
@@ -510,9 +511,10 @@ body {
 .project-details {
   margin: 6rem auto 2rem auto;
   width: 60%;
-  padding: 0.5rem;
+  padding: .5rem;
   border: 1px solid #E2474B;
 }
+
 .project-details h2 {
   text-align: center;
   color: #E2474B;
@@ -546,6 +548,7 @@ body {
   padding-top: 35%;
   font-weight: 500;
 }
+
 .site-main .site-banner .site-title h3::after {
   content: "";
   height: 2px;
@@ -553,7 +556,8 @@ body {
   background: #0E2449;
   display: inline-block;
   margin-left: 5%;
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .site-main .site-banner .banner-image > img {
@@ -573,7 +577,8 @@ button:focus,
 button:active button:hover .btn:active,
 .btn.active {
   outline: 0px !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .button {
@@ -588,9 +593,12 @@ button:active button:hover .btn:active,
   background: #E2474B;
   background-clip: padding-box;
   color: whitesmoke;
+  -webkit-transition: background 0.6s ease;
   transition: background 0.6s ease;
-  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
+
 .button.primary-button::after {
   position: absolute;
   top: -2px;
@@ -612,8 +620,10 @@ button:active button:hover .btn:active,
 .button.secondary-button {
   background: white;
   background-clip: padding-box;
+  -webkit-transition: background 0.6s ease;
   transition: background 0.6s ease;
 }
+
 .button.secondary-button::after {
   position: absolute;
   top: -2px;
@@ -639,5 +649,4 @@ button:active button:hover .btn:active,
 .title-h1 {
   font: normal bold 50px/72px "Roboto", sans-serif;
 }
-
 /*# sourceMappingURL=main.css.map */
