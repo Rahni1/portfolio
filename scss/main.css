@@ -176,6 +176,12 @@
           filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
+.our-project span a {
+  color: #777777;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
 .form-control {
   font: "Roboto", sans-serif 18px;
   outline: none;
