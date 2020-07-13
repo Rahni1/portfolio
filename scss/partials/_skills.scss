@@ -4,7 +4,7 @@
 }
 
 .site-main .skills .first-row .col-lg-1 {
-  display: flex;
+  @include flex;
   justify-content: space-between;
   margin: 0 2rem;
 }

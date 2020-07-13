@@ -6,6 +6,9 @@
 }
 
 .site-main .skills .first-row .col-lg-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   margin: 0 2rem;
@@ -485,6 +488,9 @@ body {
 }
 
 .project-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
