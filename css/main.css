@@ -499,6 +499,10 @@ body {
   width: 60%;
 }
 
+.blog-twitter {
+  padding-top: 6rem;
+}
+
 .ecommerce-title {
   font: normal bold 30px/30px "Roboto", sans-serif;
   color: #0E2449;
