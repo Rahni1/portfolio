@@ -535,6 +535,10 @@ body {
   font-size: 14px;
 }
 
+.mb {
+  padding-bottom: 30px;
+}
+
 body {
   height: 100%;
   min-height: 100%;

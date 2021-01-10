@@ -1,20 +1,4 @@
-// $(document).ready(function () {
-//   let $btns = $(".project-area .button-group button");
-
-//   $btns.click(function (e) {
-//     $(".project-area .button-group button").removeClass("active");
-//     e.target.classList.add("active");
-
-//     let selector = $(e.target).attr("data-filter");
-//     $(".project-area .grid").isotope({
-//       filter: selector,
-//     });
-
-//     return false;
-//   });
-// });
-
-// STICKY NAVBAR
+// NAVBAR
 $(document).ready(function () {
   let nav_offset_top = $(".header").height();
 
