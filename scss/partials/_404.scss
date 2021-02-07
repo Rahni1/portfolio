@@ -1,14 +1,14 @@
-
+* {
+    font-family: $roboto;
+}
 .header-404 {
-    background: red;
+    color: $blue;
+}
+.img-404 {
+  margin-top: -20px;
 }
 .container-404 {
-    background: red;
+    text-align: center;
+    padding-top: 20px;
 }
-// .header-404 {
-//     color: $blue;
-// }
-// .container-404 {
-//     text-align: center;
-//     padding-top: 20px;
-// }
+

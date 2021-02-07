@@ -25,19 +25,21 @@
   }
   .social-media {
     margin-top: -15px;
-    margin-left: 40px;
+    text-align: left;
   }
-.graphic-1 {
-  margin-top: 100px;
-  margin-bottom: -80px;
-}
- 
-.card_wrapper {
- display: flex;
- justify-content: center;
- align-items: center;
-}
+  .graphic-1 {
+    margin-top: 100px;
+    margin-bottom: -80px;
+  }
+  .site-main .services-area .services-title h1 {
+    margin-top: 80px;
+  }
 
+  .card_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .site-main .skills .first-row .col-lg-1 > .single-skill {
     width: 260px;

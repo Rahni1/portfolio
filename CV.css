@@ -121,3 +121,24 @@ margin-left: 50px;
     color: #FEA770;
     font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+    .footer {
+        width: 160%;
+    }
+    .header {
+        width: 170%;
+    }
+  .wrapper, .section-right {
+  width: 120%;
+  }
+   .fa {
+      font-size: 18px;
+      padding: 5px;
+  }
+  .skills, .contact, .social {
+    padding: 20px 0;
+}
+}
+.section-right h2 {
+    line-height: 50px;
+}

@@ -13,21 +13,7 @@
   width: 100%;
   position: relative;
   z-index: 2;
-  background-color: transparent;
   margin: 0;
-}
-
-.contact-form .input-block label {
-  position: absolute;
-  left: 10px;
-  top: 25px;
-  display: block;
-  margin: 0;
-  font-weight: 400;
-  z-index: 1;
-  color: #aaa;
-  font-size: 18px;
-  line-height: 10px;
 }
 
 #contact .wrap {
@@ -79,7 +65,7 @@
   left: 10px;
   top: 25px;
   display: block;
-  margin: 0;
+
   font-weight: 400;
   z-index: 1;
   color: #aaa;
