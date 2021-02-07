@@ -29,6 +29,11 @@
     margin-left: 40px;
   }
 
+  .graphic-1 {
+    margin-top: 100px;
+    margin-bottom: -80px;
+  }
+
   .card_wrapper {
     display: flex;
     justify-content: center;

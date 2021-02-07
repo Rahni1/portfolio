@@ -10,10 +10,12 @@
 @import "partials/about";
 @import "partials/footer";
 @import "partials/projects";
+@import "partials/404";
 
 
 body {
   height: 100%;
+  overflow-x: hidden;
   min-height: 100%;
 }
 .site-main .site-banner {
@@ -32,7 +34,7 @@ body {
   content: "";
   height: 2px;
   width: 18rem;
-  background: $navy-blue;
+  background: $blue;
   display: inline-block;
   margin-left: 5%;
   transform: translateY(-10px);
@@ -88,7 +90,7 @@ button:active button:hover .btn:active,
 .button.primary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: $navy-blue;
+  color: $blue;
 }
 
 .button.secondary-button {
@@ -111,7 +113,7 @@ button:active button:hover .btn:active,
 .button.secondary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: $navy-blue;
+  color: $blue;
 }
 
 .skills-text {

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
 .site-main .skills {
-  padding: 1rem 1rem;
-  margin: 4rem 0;
+  padding: 1rem 0rem;
+  margin: 4rem 0rem;
 }
 
 .site-main .skills .first-row .col-lg-1 {
@@ -11,14 +11,16 @@
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  margin: 0 2rem;
+  margin: 0 0rem;
 }
 
 .site-main .skills .first-row .col-lg-1 > .single-skill {
-  border: 1px solid #201f1f17;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1.5rem 0;
-  margin: 0rem 0rem;
+  box-sizing: none;
+  margin: 2rem 0;
   width: 290px;
   height: 130px;
   cursor: pointer;
@@ -45,71 +47,11 @@
 
 #slider .row {
   position: relative;
-  width: 500%;
-  margin: 0px;
+  width: 300%;
+  margin: 5rem 0px;
   left: 0;
-  -webkit-animation: 12s slider infinite;
-  animation: 12s slider infinite;
 }
 
-@-webkit-keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
 .site-main .services-area {
   padding: 7rem 2rem 0rem 2rem;
   margin-bottom: -100px;
@@ -231,7 +173,7 @@
   border: none;
   width: 100%;
   height: 60px;
-  border-bottom: 2px solid #E2474B;
+  border-bottom: 2px solid #FEA770;
   margin: 0;
   position: relative;
   margin-bottom: 20px;
@@ -284,7 +226,7 @@
 }
 
 .contact-form .square-button {
-  background-color: #E2474B;
+  background-color: #FEA770;
   color: #fff;
   font-size: 26px;
   text-transform: uppercase;
@@ -312,7 +254,7 @@
 
 .contact-form .square-button:hover,
 .contact-form .square-button:focus {
-  background-color: #E2474B;
+  background-color: #FEA770;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
@@ -331,18 +273,18 @@
   font: normal 500 15px/2px var(--roboto);
   text-transform: uppercase;
   padding: 1.7rem;
-  color: #0E2449;
+  color: #6161AE;
 }
 
 .header .main-menu .navbar-nav .active a {
-  background: #0E2449;
+  background: #6161AE;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .header .main-menu .navbar-nav a:hover {
-  background: #0E2449;
+  background: #6161AE;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -391,7 +333,7 @@ p.para {
 .footer {
   width: 100%;
   height: 200px;
-  background: #0E2449;
+  background: #6161AE;
   position: relative;
 }
 
@@ -402,7 +344,7 @@ p.para {
   position: absolute;
   top: -48px;
   left: 0;
-  background: #0E2449;
+  background: #6161AE;
   transform: skewY(8deg);
 }
 
@@ -413,7 +355,7 @@ p.para {
   position: absolute;
   top: -48px;
   right: 0;
-  background: #0E2449;
+  background: #6161AE;
   -webkit-transform: skewY(-8deg);
   -ms-transform: skewY(-8deg);
   transform: skewY(-8deg);
@@ -428,7 +370,7 @@ body {
 
 .copyright {
   bottom: -280px;
-  color: white;
+  color: #D6D6DE;
   text-align: center;
   position: absolute;
 }
@@ -473,7 +415,7 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #fff;
-  color: white;
+  color: #D6D6DE;
   margin: 10px 0px;
   display: inline-block;
   font-size: 20px;
@@ -483,8 +425,8 @@ body {
   border-radius: 50%;
 }
 .social-item a:hover {
-  border: 1px solid #E2474B;
-  color: #E2474B;
+  border: 1px solid #FEA770;
+  color: #FEA770;
 }
 
 .project-img {
@@ -505,14 +447,14 @@ body {
 
 .ecommerce-title {
   font: normal bold 30px/30px "Roboto", sans-serif;
-  color: #0E2449;
+  color: #6161AE;
   text-align: center;
   margin-top: 2rem;
 }
 
 .caption {
   font-family: "Lobster Two", cursive;
-  color: #E2474B;
+  color: #FEA770;
   font-size: 20px;
   margin: -50px 0 0 20%;
 }
@@ -521,16 +463,16 @@ body {
   margin: 6rem auto 2rem auto;
   width: 60%;
   padding: 0.5rem;
-  border: 1px solid #E2474B;
+  border: 1px solid #FEA770;
 }
 .project-details h2 {
   text-align: center;
-  color: #E2474B;
+  color: #FEA770;
   font-family: "Lobster Two", cursive;
 }
 
 .project-details ul li {
-  color: #0E2449;
+  color: #6161AE;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -539,8 +481,17 @@ body {
   padding-bottom: 30px;
 }
 
+.header-404 {
+  background: red;
+}
+
+.container-404 {
+  background: red;
+}
+
 body {
   height: 100%;
+  overflow-x: hidden;
   min-height: 100%;
 }
 
@@ -564,7 +515,7 @@ body {
   content: "";
   height: 2px;
   width: 18rem;
-  background: #0E2449;
+  background: #6161AE;
   display: inline-block;
   margin-left: 5%;
   transform: translateY(-10px);
@@ -594,12 +545,12 @@ button:active button:hover .btn:active,
   padding: 0.8rem 2.2rem;
   font: normal 500 16px/20px "Roboto", sans-serif;
   position: relative;
-  border: 2px solid #E2474B;
+  border: 2px solid #FEA770;
   border-radius: 4px;
 }
 
 .button.primary-button {
-  background: #E2474B;
+  background: #FEA770;
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.6s ease;
@@ -611,7 +562,7 @@ button:active button:hover .btn:active,
   left: -2px;
   bottom: -2px;
   right: -2px;
-  background: #E2474B;
+  background: #FEA770;
   content: " ";
   z-index: -1;
   border-radius: 4px;
@@ -620,7 +571,7 @@ button:active button:hover .btn:active,
 .button.primary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: #0E2449;
+  color: #6161AE;
 }
 
 .button.secondary-button {
@@ -634,7 +585,7 @@ button:active button:hover .btn:active,
   left: -2px;
   bottom: -2px;
   right: -2px;
-  background: #E2474B;
+  background: #FEA770;
   content: " ";
   z-index: -1;
   border-radius: 4px;
@@ -643,7 +594,7 @@ button:active button:hover .btn:active,
 .button.secondary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: #0E2449;
+  color: #6161AE;
 }
 
 .skills-text {

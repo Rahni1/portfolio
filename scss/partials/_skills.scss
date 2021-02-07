@@ -1,19 +1,22 @@
 .site-main .skills {
-  padding: 1rem 1rem;
-  margin: 4rem 0;
+  padding: 1rem 0rem;
+  margin: 4rem 0rem;
 }
 
 .site-main .skills .first-row .col-lg-1 {
   @include flex;
   justify-content: space-between;
-  margin: 0 2rem;
+  margin: 0 0rem;
 }
 
+
 .site-main .skills .first-row .col-lg-1 > .single-skill {
-  border: 1px solid $border-color;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1.5rem 0;
-  margin: 0rem 0rem;
+  box-sizing: none;
+  margin: 2rem 0;
   width: 290px;
   height: 130px;
   cursor: pointer;
@@ -41,69 +44,7 @@
 
 #slider .row {
   position: relative;
-  width: 500%;
-  margin: 0px;
+  width: 300%;
+  margin: 5rem 0px;
   left: 0;
-  -webkit-animation: 12s slider infinite;
-  animation: 12s slider infinite;
-}
-
-@-webkit-keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
-
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
 }

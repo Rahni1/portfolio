@@ -21,11 +21,14 @@ a {
     display: flex;
     flex-direction: column;
 }
+.logo {
+    visibility: hidden;
+}
 .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #0E2449;
+    background-color: #6161AE;
     height: 150px;
 }
 .logo {
@@ -39,7 +42,7 @@ a {
     align-items: center;
 }
 .name {
-    color: #E2474B;
+    color: #FEA770;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 36px;
@@ -59,7 +62,7 @@ a {
 }
 .section-left {
     flex: 1;
-    background-color: #E2474B;
+    background-color: #FEA770;
 }
 
 .section-left ul {
@@ -70,7 +73,7 @@ font-size: 12px;
 }
 
 .footer {
-    background-color: #0E2449;
+    background-color: #6161AE;
     padding: 20px;
     font-family: 'Sanchez', serif;
     font-size: 12px;
@@ -115,6 +118,6 @@ margin-left: 50px;
     margin-left: -20px;
 }
 .section-right h2 {
-    color: #E2474B;
+    color: #FEA770;
     font-weight: bold;
 }

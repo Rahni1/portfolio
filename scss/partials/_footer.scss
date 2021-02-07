@@ -7,7 +7,7 @@
 .footer {
     width: 100%;
     height: 200px;
-    background: $navy-blue;
+    background: $blue;
     position: relative;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     top: -48px;
     left: 0;
-    background: $navy-blue;
+    background: $blue;
     transform: skewY(8deg);
 }
 
@@ -29,7 +29,7 @@
     position: absolute;
     top: -48px;
     right: 0;
-    background: $navy-blue;
+    background: $blue;
     -webkit-transform: skewY(-8deg);
     -ms-transform: skewY(-8deg);
     transform: skewY(-8deg);
@@ -44,7 +44,7 @@ body {
 
 .copyright {
     bottom: -280px;
-    color: $white;
+    color: $lightgrey;
     text-align: center;
     position: absolute;
 }
@@ -87,7 +87,7 @@ body {
         -o-transition: 0.5s;
         transition: 0.5s;
         border: 1px solid #fff;
-        color: $white;
+        color: $lightgrey;
         margin: 10px 0px;
         display: inline-block;
         font-size: 20px;
