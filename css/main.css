@@ -129,21 +129,7 @@
   width: 100%;
   position: relative;
   z-index: 2;
-  background-color: transparent;
   margin: 0;
-}
-
-.contact-form .input-block label {
-  position: absolute;
-  left: 10px;
-  top: 25px;
-  display: block;
-  margin: 0;
-  font-weight: 400;
-  z-index: 1;
-  color: #aaa;
-  font-size: 18px;
-  line-height: 10px;
 }
 
 #contact .wrap {
@@ -190,19 +176,6 @@
 .contact-form .input-block.textarea .form-control {
   height: auto;
   resize: none;
-}
-
-.contact-form .input-block label {
-  position: absolute;
-  left: 10px;
-  top: 25px;
-  display: block;
-  margin: 0;
-  font-weight: 400;
-  z-index: 1;
-  color: #aaa;
-  font-size: 18px;
-  line-height: 10px;
 }
 
 .contact-form .input-block .form-control {
@@ -399,7 +372,7 @@ body {
 
 .social-media {
   position: relative;
-  z-index: 1000;
+  z-index: 100;
   padding-right: 40px;
   margin-top: 100px;
   float: right;
@@ -481,12 +454,21 @@ body {
   padding-bottom: 30px;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .header-404 {
-  background: red;
+  color: #6161AE;
+}
+
+.img-404 {
+  margin-top: -20px;
 }
 
 .container-404 {
-  background: red;
+  text-align: center;
+  padding-top: 20px;
 }
 
 body {
