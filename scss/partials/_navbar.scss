@@ -2,25 +2,25 @@
   padding: 0 2rem 0 5rem;
 }
 
-.header .main-menu .navbar{
+.header .main-menu .navbar {
   padding: 1rem 20rem;
 }
 
-.header .main-menu .nav-item .nav-link{
+.header .main-menu .nav-item .nav-link {
   font: normal 500 15px/2px var(--roboto);
   text-transform: uppercase;
   padding: 1.7rem;
   color: $blue;
 }
 
-.header .main-menu .navbar-nav .active a{
+.header .main-menu .navbar-nav .active a {
   background: $blue;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.header .main-menu .navbar-nav a:hover{
+.header .main-menu .navbar-nav a:hover {
   background: $blue;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

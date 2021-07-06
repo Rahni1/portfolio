@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
 .site-main .skills {
   padding: 1rem 0rem;
   margin: 4rem 0rem;
@@ -151,7 +149,6 @@
 .contact-form {
   width: 100%;
   margin: 210px auto 0 auto;
-  padding: 0px 40px;
 }
 
 .contact-form .input-block {
@@ -176,6 +173,10 @@
 .contact-form .input-block.textarea .form-control {
   height: auto;
   resize: none;
+}
+
+.contact-row {
+  margin: auto;
 }
 
 .contact-form .input-block .form-control {

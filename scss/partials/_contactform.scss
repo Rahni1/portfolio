@@ -35,7 +35,6 @@
 .contact-form {
   width: 100%;
   margin: 210px auto 0 auto;
-  padding: 0px 40px;
 }
 
 .contact-form .input-block {
@@ -60,7 +59,9 @@
   height: auto;
   resize: none;
 }
-
+.contact-row {
+  margin: auto;
+}
 .contact-form .input-block .form-control {
   background-color: transparent;
   margin: 0;
