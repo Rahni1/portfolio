@@ -411,8 +411,12 @@ body {
   justify-content: center;
   align-items: center;
   margin: 4rem auto;
-  border: 2px solid #ebebeb;
+  border: 2px solid rgb(235, 235, 235);
   width: 60%;
+}
+
+.our-project .img {
+  border: 1px solid lightgrey;
 }
 
 .blog-twitter {
